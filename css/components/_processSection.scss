@@ -1,0 +1,41 @@
+// Process section
+.processSection-wrapper {
+  margin-bottom: 120px;
+  margin-top: 120px;
+}
+.process-article1 {
+  display: flex;
+  align-items: center;
+}
+.process-article1 h2 {
+  margin-right: 20px;
+}
+.processSection-contentWrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.processSection-processItem {
+  width: 33%;
+  height: 330px;
+  position: relative;
+  display: flex;
+}
+.process-bg-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.processSection-processInnerContent h3 {
+  position: absolute;
+  width: 50%;
+  margin-left: 70px;
+  margin-top: 65px;
+}
+.processParagraph {
+  position: absolute;
+  margin-left: 70px;
+  margin-top: 150px;
+}
+.processParagraph p {
+  margin: 10px 0;
+}

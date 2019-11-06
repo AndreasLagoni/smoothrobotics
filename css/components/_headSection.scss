@@ -1,0 +1,30 @@
+// Head Section SCSS
+.headSection-wrapper {
+  position: relative;
+  height: 85vh;
+}
+.headSection-info {
+  padding-right: 500px;
+  z-index: 10;
+  height: 740px;
+  display: flex;
+  align-items: center;
+}
+.headSection-innerInfo p {
+  width: 70%;
+  padding: 20px 0;
+}
+.headSection-innerInfo .header-h2 {
+  padding-top: 20px;
+}
+.header-bg-h1 {
+  position: absolute;
+  line-height: 70%;
+}
+.headSection-info img {
+  position: absolute;
+  width: 60%;
+  right: -100px;
+  top: 0;
+  z-index: 20;
+}

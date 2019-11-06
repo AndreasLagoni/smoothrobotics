@@ -1,0 +1,45 @@
+@import "./headSection";
+@import "./skillSection";
+@import "./processSection";
+@import "./projectsSection";
+$bg-color: #000000;
+.contentWrapper {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  background-color: $bg-color;
+  grid-template-columns: 18% auto 18%;
+  grid-template-rows: auto auto auto auto auto auto;
+  grid-template-areas:
+    ". headSection ."
+    ". skillSection ."
+    ". processSection ."
+    ". projectsSection ."
+    ". careerSection ."
+    ". educationSection .";
+}
+// Different sections will have different properties
+// Starting with headsection
+.headSection-wrapper {
+  grid-area: headSection;
+}
+// Skill section
+.skillsSection-wrapper {
+  grid-area: skillSection;
+}
+// Process section
+.processSection-wrapper {
+  grid-area: processSection;
+}
+// Project section
+.projectsSection-wrapper {
+  grid-area: projectsSection;
+}
+// Career section
+.careerSection-wrapper {
+  grid-area: careerSection;
+}
+// Education section
+.educationSection-wrapper {
+  grid-area: educationSection;
+}
