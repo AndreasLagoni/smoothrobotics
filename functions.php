@@ -1,11 +1,67 @@
 <?php
 
-function load_stylesheets() {
-
-
-wp_register_style("stylesheet", get_template_directory_uri() . "./style.css", array(), rand(111,9999), 'all');
-wp_enqueue_style("stylesheet");
+add_theme_support('post-thumbnails');
+add_theme_support('menus');
+// Menu
+register_nav_menus(
+    array(
+        'top-menu' => __('Top Menu', 'theme')
+    )
+    );
+function load_scripts() {
+    wp_enqueue_style("stylesheet", get_template_directory_uri() . '/style.css', array(), filemtime(get_template_directory() . '/style.css'), 'all');
+      
+    global $post;
+    if( is_page() || is_single() )
+    {
+        switch($post->post_name) 
+        {
+            case 'home':
+                wp_enqueue_script('home', get_template_directory_uri() . '/js/home.js', array(), '', true);
+                break;
+        }
+    }   
 }
-
-add_action("wp_enqueue_scripts", "load_stylesheets");
+add_action('wp_enqueue_scripts', 'load_scripts');
+// Laver custom post type for news
+function custom_post_type_news() {
+    $labels = array(
+        'name' => 'News',
+        'singular_name' => 'News',
+        'add_new' => 'Add News',
+        'all_items' => 'All news',
+        'add_new_item' => 'Add News',
+        'edit_item' => 'Edit News',
+        'new_item' => 'New News',
+        'view_item' => 'View News',
+        'search_item' => 'Search news',
+        'not_found' => 'No news found',
+        'not_found_in_trash' => 'No news found in trash',
+        'parent_item_colon' => 'Parent Item',
+    );
+    $args = array(
+        'labels' => $labels,
+        'public' => true,
+        'has_archive' => false,
+        'publicly_queryable' => true,
+        'query_var' => true,
+        'rewrite' => true,
+        'capability_type' => 'post',
+        'hierachical' => false,
+        'suppoer' => array(
+            'title',
+            'editor',
+            'excerpt',
+            'thumbnail',
+            'revisions',
+        ),
+        'taxonomies' => array(
+            'category', 'post_tag'
+        ),
+        'menu_position' => 4,
+        'exclude_from_search' => false
+    );
+    register_post_type('news',$args);
+}
+add_action('init','custom_post_type_news');
 ?>

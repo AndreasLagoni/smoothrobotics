@@ -1,0 +1,17 @@
+.topHeader {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.topNav-links ul {
+  list-style: none;
+  display: flex;
+}
+.topNav-links ul li {
+  margin-left: 61px;
+}
+.topNav-links ul li a {
+  text-decoration: none;
+}

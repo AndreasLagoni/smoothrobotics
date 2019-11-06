@@ -1,0 +1,34 @@
+$font-family: Arial;
+$h1-size: 70px;
+$h2-size: 50px;
+$h3-size: 40px;
+$p-size: 25px;
+$nav-size: 30px;
+$primary-color: #1b2347;
+$secondary-color: #d97e3f;
+h1,
+h2,
+h3,
+p,
+a,
+li,
+span,
+button {
+  font-family: $font-family;
+}
+h1 {
+  font-size: $h1-size;
+}
+h2 {
+  font-size: $h2-size;
+}
+h3 {
+  font-size: $h3-size;
+}
+p {
+  font-size: $p-size;
+}
+li a {
+  color: $primary-color;
+  font-size: $nav-size;
+}
