@@ -48,6 +48,7 @@ li a {
 
 .topHeader {
   width: 80%;
+  height: 140px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -72,6 +73,26 @@ li a {
 }
 
 .topNav-links ul li a {
+  padding: 1px 0;
   text-decoration: none;
+  position: relative;
+}
+
+.topNav-links ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 0px;
+  height: 2px;
+  left: 0;
+  background-color: #d97e3f;
+  -webkit-transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.4s;
+}
+
+.topNav-links ul li a:hover::after {
+  width: 100%;
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
 }
 /*# sourceMappingURL=style.css.map */
