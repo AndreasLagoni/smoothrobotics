@@ -1,13 +1,6 @@
 <?php
 
-add_theme_support('post-thumbnails');
-add_theme_support('menus');
-// Menu
-register_nav_menus(
-    array(
-        'top-menu' => __('Top Menu', 'theme')
-    )
-    );
+
 function load_scripts() {
     wp_enqueue_style("stylesheet", get_template_directory_uri() . '/style.css', array(), filemtime(get_template_directory() . '/style.css'), 'all');
       
@@ -22,6 +15,20 @@ function load_scripts() {
         }
     }   
 }
+add_theme_support('post-thumbnails');
+add_theme_support('menus');
+// Menu
+register_nav_menus(
+    array(
+        'top-menu' => __('Top Menu', 'theme')
+    )
+    );
+
+    // Ændrer i excerpt filters
+function wpdocs_custom_excerpt_length($length) {
+    return 25;
+}
+add_filter('excerpt_length', 'wpdocs_custom_excerpt_length',999);
 add_action('wp_enqueue_scripts', 'load_scripts');
 // Laver custom post type for news
 function custom_post_type_news() {
@@ -42,7 +49,7 @@ function custom_post_type_news() {
     $args = array(
         'labels' => $labels,
         'public' => true,
-        'has_archive' => false,
+        'has_archive' => true,
         'publicly_queryable' => true,
         'query_var' => true,
         'rewrite' => true,

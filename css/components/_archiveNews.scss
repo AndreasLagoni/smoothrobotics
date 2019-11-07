@@ -1,0 +1,24 @@
+.archive-bannerwrapper {
+  height: 500px;
+  width: 100%;
+  background-image: url("http://localhost/wordpress/wp-content/uploads/2019/11/news-banner.png");
+}
+.archive-innerwrapper {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.archive-itemwrapper {
+  padding-top: 100px;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.archive-Item {
+  width: 30%;
+}
