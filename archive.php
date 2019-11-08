@@ -1,31 +1,49 @@
 <?php get_header();?>
 <main class="archive-wrapper archive-news">
 <section class="archive-bannerwrapper">
+<article class="archive-banneroverlay"></article>
 <article class="archive-innerwrapper">
-<h1>Company News.</h1>
-<p>Find out about our latest developments, collaborations and 
+<h1 class="newsbanner-h1">Company News.</h1>
+<p class="newsbanner-p">Find out about our latest developments, collaborations and 
 events in the international robot industry.</p>
 </article>
 </section>
 <section class="archive-itemwrapper archive-news">
 
-<?php 
-// Her leder vi efter post_type "News".
-$archiveloop = new WP_query(array(
-    'post_type' => 'News',
-    'posts_per_page' => 6
-));
- 
+<?php if(have_posts()) : while(have_posts()) : the_post();
+// Her skal vi have fat i thumbnail url så vi kan bruge det på background-url
+$thumb_id = get_post_thumbnail_id();
+$thumb_url_array = wp_get_attachment_image_src($thumb_id, 'thumbnail-size', true);
+$thumb_url = $thumb_url_array[0];
 ?>
-<?php while($archiveloop->have_posts()) : $archiveloop->the_post();?>
 <article class="archive-Item news-Item"> 
-    <h3><?php the_title();?></h3>
-    <?php the_excerpt();?>
-    <a href="<?php the_permalink();?>">Go to news</a>
-</article>
-<?php endwhile; wp_reset_query();?>
 
+<div class="archive-itembanner" 
+style="background-image: url(<?php echo $thumb_url;?>)">
+</div>
+<div class="archive-itemcontent">
+    <h3 class="archive-item-header"><?php the_title();?></h3>
+    <?php the_excerpt();?>
+    <div class="archive-item-permalink">
+    <a href="<?php the_permalink();?>" class="archive-item-link">Go to news</a></div>
+    </div>
+</article>
+
+<?php endwhile;
+?>
+<?php 
+else: 
+    echo "No news found";
+
+endif;
+
+previous_posts_link( '&laquo; Newer posts' );
+next_posts_link( 'Older posts &raquo;');
+
+?>
 
 </section>
+<div class="archive-navigate-nextpage">
+</div>
 </main>
 <?php get_footer();?>

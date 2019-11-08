@@ -15,6 +15,17 @@ function load_scripts() {
         }
     }   
 }
+// Lad os lige prøve noget
+function add_custom_pt( $query ) {
+    if ( !is_admin() && $query->is_main_query() ) {
+      $query->set( 'post_type', array( 'post', 'News' ) );
+      $query->set( 'category_name', 'News' );
+      $query->set( 'order', 'ASC' );
+      $query->set( 'posts_per_page', 6 );
+    }
+  }
+  add_action( 'pre_get_posts', 'add_custom_pt' );
+// 
 add_theme_support('post-thumbnails');
 add_theme_support('menus');
 // Menu
@@ -28,6 +39,7 @@ register_nav_menus(
 function wpdocs_custom_excerpt_length($length) {
     return 25;
 }
+
 add_filter('excerpt_length', 'wpdocs_custom_excerpt_length',999);
 add_action('wp_enqueue_scripts', 'load_scripts');
 // Laver custom post type for news
@@ -55,7 +67,7 @@ function custom_post_type_news() {
         'rewrite' => true,
         'capability_type' => 'post',
         'hierachical' => false,
-        'suppoer' => array(
+        'supports' => array(
             'title',
             'editor',
             'excerpt',

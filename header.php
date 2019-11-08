@@ -8,7 +8,7 @@
 
     <header class="topHeader">
         <nav class="topNav-logo">
-            <img src="./wp-content/themes/smoothrobotics/assets/logo.png" alt="">
+            <img src="http://localhost/wordpress/wp-content/uploads/2019/11/logo.png" alt="">
         </nav>
     <nav class="topNav-links">
     <?php wp_nav_menu (
