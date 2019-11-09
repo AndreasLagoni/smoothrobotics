@@ -10,7 +10,7 @@ function load_scripts() {
         switch($post->post_name) 
         {
             case 'home':
-                wp_enqueue_script('home', get_template_directory_uri() . '/js/home.js', array(), '', true);
+                
                 break;
         }
     }   
@@ -18,7 +18,7 @@ function load_scripts() {
 // Lad os lige prøve noget
 function add_custom_pt( $query ) {
     if ( !is_admin() && $query->is_main_query() ) {
-      $query->set( 'post_type', array( 'post', 'News' ) );
+      $query->set( 'post_type', array( 'News' ) );
       $query->set( 'category_name', 'News' );
       $query->set( 'order', 'ASC' );
       $query->set( 'posts_per_page', 6 );
