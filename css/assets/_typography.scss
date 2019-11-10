@@ -1,5 +1,6 @@
 $font-family: Arial;
 $h1-size: 70px;
+$h2-large: 60px;
 $h2-size: 50px;
 $h3-size: 40px;
 $p-size: 25px;
@@ -31,4 +32,8 @@ p {
 li a {
   color: $primary-color;
   font-size: $nav-size;
+}
+h2.contactinfo {
+  color: $primary-color;
+  font-size: $h2-large;
 }

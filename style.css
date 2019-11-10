@@ -46,6 +46,11 @@ li a {
   font-size: 30px;
 }
 
+h2.contactinfo {
+  color: #1b2347;
+  font-size: 60px;
+}
+
 .topHeader {
   width: 80%;
   height: 140px;
@@ -226,5 +231,22 @@ li a {
   color: white;
   font-size: 20px;
   margin-right: 10px;
+}
+
+.contact-wrapper {
+  width: 80%;
+  padding: 200px 0;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact-info {
+  width: 50%;
+}
+
+.contact-form {
+  width: 50%;
 }
 /*# sourceMappingURL=style.css.map */

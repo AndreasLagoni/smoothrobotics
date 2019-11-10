@@ -27,5 +27,22 @@ have any question, do not hesitate to contact us.</p>
 </div>
 </article>
 </section>
+<section class="contact-wrapper">
+    <article class="contact-info">
+        <h2 class="contactinfo">Ask about our 
+SmoothTool, Use 
+Cases, Pricing, 
+partner and 
+implementation for 
+your business. </h2>
+    </article>
+    <article class="contact-form">
+    <?php if(have_posts()) : while(have_posts()) : the_post();?>
+
+<?php the_content();?>
+
+<?php endwhile; endif; ?>
+    </article>
+</section>
 </main>
 <?php get_footer();?>
