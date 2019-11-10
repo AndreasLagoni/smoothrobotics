@@ -1,0 +1,44 @@
+.banner-bannerwrapper {
+  height: 500px;
+  width: 100%;
+  position: relative;
+  z-index: 0;
+}
+.archive-banner {
+  background-image: url("http://localhost/wordpress/wp-content/uploads/2019/11/news-banner.png");
+}
+.contact-banner {
+  background-image: url("http://localhost/wordpress/wp-content/uploads/2019/11/contact.png");
+}
+.banneroverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1b2347;
+  opacity: 0.5;
+  z-index: -1;
+}
+.banner-innerwrapper {
+  z-index: 100;
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.banner-innerwrapper h1 {
+  width: 50%;
+}
+.banner-innerwrapper p {
+  width: 60%;
+}
+.newsbanner-h1,
+.newsbanner-p {
+  color: white;
+}
+.newsbanner-p {
+  margin: 15px 0;
+}

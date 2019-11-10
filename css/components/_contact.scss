@@ -1,0 +1,20 @@
+// Banner
+.banner-innercontact {
+  display: flex;
+  margin-top: 30px;
+}
+.banner-innercontactsocialitem {
+  display: flex;
+  align-items: center;
+}
+.banner-innercontactsocialitem p {
+  width: 100%;
+  color: white;
+  margin-right: 25px;
+  font-weight: bold;
+}
+.banner-innercontactsocialitem i {
+  color: white;
+  font-size: 20px;
+  margin-right: 10px;
+}

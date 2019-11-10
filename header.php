@@ -3,6 +3,9 @@
     <head>
         <?php wp_head();?>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Tilføjer font awesome -->
+        <script src="https://kit.fontawesome.com/14266baabc.js" crossorigin="anonymous"></script>
+
     </head>
     <body <?php body_class();?>>
 

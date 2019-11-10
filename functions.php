@@ -17,9 +17,9 @@ function load_scripts() {
 }
 // Lad os lige prøve noget
 function add_custom_pt( $query ) {
-    if ( !is_admin() && $query->is_main_query() ) {
+    
+    if ( !is_admin() && $query->is_main_query() && $query->is_post_type_archive('news')) {
       $query->set( 'post_type', array( 'News' ) );
-      $query->set( 'category_name', 'News' );
       $query->set( 'order', 'ASC' );
       $query->set( 'posts_per_page', 6 );
     }
@@ -52,8 +52,8 @@ function custom_post_type_news() {
         'add_new_item' => 'Add News',
         'edit_item' => 'Edit News',
         'new_item' => 'New News',
-        'view_item' => 'View News',
-        'search_item' => 'Search news',
+        'view_items' => 'View News',
+        'search_items' => 'Search news',
         'not_found' => 'No news found',
         'not_found_in_trash' => 'No news found in trash',
         'parent_item_colon' => 'Parent Item',

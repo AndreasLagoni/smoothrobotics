@@ -1,8 +1,8 @@
 <?php get_header();?>
-<main class="archive-wrapper archive-news">
-<section class="archive-bannerwrapper">
-<article class="archive-banneroverlay"></article>
-<article class="archive-innerwrapper">
+<main class="main-wrapper">
+<section class="banner-bannerwrapper archive-banner">
+<article class="banneroverlay"></article>
+<article class="banner-innerwrapper">
 <h1 class="newsbanner-h1">Company News.</h1>
 <p class="newsbanner-p">Find out about our latest developments, collaborations and 
 events in the international robot industry.</p>
