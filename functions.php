@@ -31,7 +31,7 @@ add_theme_support('menus');
 // Menu
 register_nav_menus(
     array(
-        'top-menu' => __('Top Menu', 'theme')
+        'top-menu' => __('Top Menu', 'theme'), 'footer-menu' => __('Footer Menu', 'theme')
     )
     );
 
