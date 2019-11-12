@@ -21,7 +21,11 @@ p,
 a,
 li,
 span,
-button {
+button,
+textarea,
+option,
+label,
+div {
   font-family: Arial;
 }
 
@@ -248,5 +252,97 @@ h2.contactinfo {
 
 .contact-form {
   width: 50%;
+}
+
+.contactinfo {
+  width: 80%;
+}
+
+.std-label {
+  width: 100%;
+  font-size: 20px;
+  padding: 5px 2px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #707070;
+}
+
+.std-label-no-border,
+.wpcf7-list-item-label {
+  width: 100%;
+  font-size: 20px;
+  padding: 5px 2px;
+  margin-bottom: 10px;
+  color: #1b2347;
+  font-size: 20px;
+}
+
+.std-label:active {
+  outline: 0;
+}
+
+.std-label:focus {
+  outline: 0;
+}
+
+.std-label::-webkit-input-placeholder {
+  color: #1b2347;
+  font-size: 20px;
+}
+
+.std-label:-ms-input-placeholder {
+  color: #1b2347;
+  font-size: 20px;
+}
+
+.std-label::-ms-input-placeholder {
+  color: #1b2347;
+  font-size: 20px;
+}
+
+.std-label::placeholder {
+  color: #1b2347;
+  font-size: 20px;
+}
+
+.std-text-area {
+  margin-top: 5px;
+  border: 1px solid #707070;
+  width: 100%;
+  resize: vertical;
+  padding: 5px 2px;
+  font-size: 16px;
+}
+
+.std-text-area:focus {
+  outline: none;
+}
+
+.std-text-area:active {
+  outline: none;
+}
+
+input[type="submit"] {
+  margin-top: 50px;
+  color: white;
+  max-width: 300px;
+  padding: 20px 60px;
+  font-size: 15px;
+  background-color: #d97e3f;
+  cursor: pointer;
+}
+
+input[type="submit"]:active,
+input[type="submit"]:focus {
+  outline: none;
+}
+
+input[type="checkbox"] {
+  background-color: transparent;
+  width: 15px;
+  height: 15px;
+}
+
+.std-checkbox .wpcf7-list-item {
+  margin: 0;
 }
 /*# sourceMappingURL=style.css.map */
