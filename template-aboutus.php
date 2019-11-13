@@ -107,7 +107,17 @@ Our goal is to perfect how to make robots work on the principle of human experti
 style="background-image: url(<?php echo $thumb_url;?>)">
                 </div>
                 <div class="teammembers-itemcontent">
-                    <h3><?php the_title();?></h3>
+                    <h3 class="teammembers-name"><?php the_title();?></h3>
+                    <h3 class="teammembers-title">
+                    <?php echo get_post_meta($post->ID, 'title', true);?>
+                    </h3>
+                    <p class="teammembers-phonenumber">
+                    <?php echo get_post_meta($post->ID, 'phone-number', true);?>
+                    </p>
+                    <p class="teammembers-email">
+                    <?php echo get_post_meta($post->ID, 'email', true);?>
+                    </p>
+
 
                 </div>
             </div>
@@ -117,6 +127,12 @@ style="background-image: url(<?php echo $thumb_url;?>)">
     echo "No Members found";
 endif; ?>
         </article>
+    </section>
+    <section class="sendtocontact">
+        <h2>We would love to hear from you</h2>
+        <p>Let us answer your questions. We are here to take 
+the journey with you</p>
+<a href="/contact">Contact Smooth Robotics</a>
     </section>
 </main>
 </main>

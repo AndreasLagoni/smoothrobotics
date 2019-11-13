@@ -595,21 +595,49 @@ input[type="checkbox"] {
 
 .archiveteammembers-wrapper {
   padding-top: 100px;
-  width: 80%;
-  margin: 0 auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(450px, 2fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(450px, 2fr));
-  grid-auto-rows: minmax(350px, auto);
-  grid-gap: 75px;
+  -ms-grid-columns: (minmax(320px, 2fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(320px, 2fr));
+  grid-auto-rows: minmax(320px, auto);
+  grid-gap: 35px;
 }
 
 .teammembers-itembanner {
-  height: 350px;
+  height: 300px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 5px 5px 0 0;
+}
+
+.teammembers-itemcontent .teammembers-name {
+  color: #1b2347;
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.teammembers-itemcontent {
+  padding: 14px 0;
+  background-color: #d6d6d6;
+  text-align: center;
+  border-radius: 0 0 5px 5px;
+}
+
+.teammembers-title {
+  color: #d97e3f;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.teammembers-phonenumber,
+.teammembers-email {
+  color: #1b2347;
+  font-size: 14px;
+  font-weight: bold;
+  opacity: 0.5;
+  margin: 2px 0;
 }
 
 .footerwrapper {

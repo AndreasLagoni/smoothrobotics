@@ -114,6 +114,7 @@ function custom_post_type_teammembers() {
             'excerpt',
             'thumbnail',
             'revisions',
+            'custom-fields',
         ),
         'taxonomies' => array(
             'category', 'post_tag'
