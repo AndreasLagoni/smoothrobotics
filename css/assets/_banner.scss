@@ -29,10 +29,10 @@
   flex-direction: column;
   justify-content: center;
 }
-.banner-innerwrapper h1 {
+.banner-innerwrapper .newsbanner-h1 {
   width: 50%;
 }
-.banner-innerwrapper p {
+.banner-innerwrapper .newsbanner-p {
   width: 60%;
 }
 .newsbanner-h1,
@@ -41,4 +41,17 @@
 }
 .newsbanner-p {
   margin: 15px 0;
+}
+// About us banner
+.banner-innerwrapper .aboutus-h2,
+.banner-innerwrapper .aboutus-h1 {
+  color: white;
+}
+.banner-innerwrapper .aboutus-h2 {
+  font-size: 30px;
+  font-weight: 500;
+  margin: 10px 0;
+}
+.banner-innerwrapper .aboutus-h1 {
+  width: 70%;
 }

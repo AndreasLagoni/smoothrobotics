@@ -40,6 +40,7 @@ endif;
 previous_posts_link( '&laquo; Newer posts' );
 next_posts_link( 'Older posts &raquo;');
 
+
 ?>
 
 </section>

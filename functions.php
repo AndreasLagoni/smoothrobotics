@@ -15,7 +15,7 @@ function load_scripts() {
         }
     }   
 }
-// Lad os lige prøve noget
+// Laver custom WP query. Det gør at vi kan lave pagination meget nemmere. 
 function add_custom_pt( $query ) {
     
     if ( !is_admin() && $query->is_main_query() && $query->is_post_type_archive('news')) {
@@ -24,7 +24,7 @@ function add_custom_pt( $query ) {
       $query->set( 'posts_per_page', 6 );
     }
   }
-  add_action( 'pre_get_posts', 'add_custom_pt' );
+add_action( 'pre_get_posts', 'add_custom_pt' );
 // 
 add_theme_support('post-thumbnails');
 add_theme_support('menus');
@@ -83,4 +83,45 @@ function custom_post_type_news() {
     register_post_type('news',$args);
 }
 add_action('init','custom_post_type_news');
+// Laver custom post type for Teammembers
+function custom_post_type_teammembers() {
+    $labels = array(
+        'name' => 'Members',
+        'singular_name' => 'Member',
+        'add_new' => 'Add Member',
+        'all_items' => 'All Members',
+        'add_new_item' => 'Add Member',
+        'edit_item' => 'Edit Member',
+        'new_item' => 'New Member',
+        'view_items' => 'View Members',
+        'search_items' => 'Search Members',
+        'not_found' => 'No Members found',
+        'not_found_in_trash' => 'No Members found in trash',
+        'parent_item_colon' => 'Parent Item',
+    );
+    $args = array(
+        'labels' => $labels,
+        'public' => true,
+        'has_archive' => true,
+        'publicly_queryable' => true,
+        'query_var' => true,
+        'rewrite' => true,
+        'capability_type' => 'post',
+        'hierachical' => false,
+        'supports' => array(
+            'title',
+            'editor',
+            'excerpt',
+            'thumbnail',
+            'revisions',
+        ),
+        'taxonomies' => array(
+            'category', 'post_tag'
+        ),
+        'menu_position' => 4,
+        'exclude_from_search' => false
+    );
+    register_post_type('Members',$args);
+}
+add_action('init','custom_post_type_teammembers');
 ?>
