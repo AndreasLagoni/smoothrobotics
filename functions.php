@@ -126,11 +126,14 @@ function custom_post_type_teammembers() {
 }
 add_action('init','custom_post_type_teammembers');
 // Her tilføjer vi mulighed for admins at lave om på contact page. 
-function smoothrobotics_contact_callout($wp_customize) {
+function smoothrobotics_custom_callout($wp_customize) {
     // Tilføjer så man kan ændre headline i admin panel
+    // Først laver vi selve sektionen til admin panelen under customize.
     $wp_customize -> add_section('smoothrobotics-contact-callout-section', array(
         'title' => 'Contact Us'
     ));
+    // Det næste stykke er til selve under sektionen "contact us"
+    // Det første er headline
     $wp_customize->add_setting('smoothrobotics-contact-callout-headline', array(
         'default' => 'Do you need further information?'
     ));
@@ -139,7 +142,30 @@ function smoothrobotics_contact_callout($wp_customize) {
         'section' => 'smoothrobotics-contact-callout-section',
         'settings' => 'smoothrobotics-contact-callout-headline'
     )));
+    // Her laver vi customize for headline-paragraph 
+    // som ligger lige under headline
+    $wp_customize->add_setting('smoothrobotics-contact-callout-paragraph', array(
+        'default' => 'We gladly provide you with any further information. if you 
+        have any question, do not hesitate to contact us.'
+    ));
+    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'smoothrobotics-contact-callout-paragraph-control', array(
+        'label' => 'Headline-Paragraph',
+        'section' => 'smoothrobotics-contact-callout-section',
+        'settings' => 'smoothrobotics-contact-callout-paragraph',
+        'type' => 'textarea',
+    )));
+    // Her laver vi customize content-headline. Som ligger 
+    // ved siden af kontaktformen
+    $wp_customize->add_setting('smoothrobotics-contact-callout-contenthead', array(
+        'default' => 'Ask about our SmoothTool, Use Cases, Pricing, partner and implementation for your business.'
+    ));
+    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'smoothrobotics-contact-callout-contenthead-control', array(
+        'label' => 'Main Headline',
+        'section' => 'smoothrobotics-contact-callout-section',
+        'settings' => 'smoothrobotics-contact-callout-contenthead',
+        'type' => 'textarea',
+    )));
 }
 
-add_action('customize_register', 'smoothrobotics_contact_callout');
+add_action('customize_register', 'smoothrobotics_custom_callout');
 ?>
