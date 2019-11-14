@@ -127,12 +127,12 @@ style="background-image: url(<?php echo $thumb_url;?>)">
     echo "No Members found";
 endif; ?>
         </article>
-    </section>
-    <section class="sendtocontact">
+        </section>
+        <section class="sendtocontact">
         <h2>We would love to hear from you</h2>
         <p>Let us answer your questions. We are here to take 
 the journey with you</p>
-<a href="/contact">Contact Smooth Robotics</a>
+<a href="./contact-us" class="std-link">Contact Smooth Robotics</a>
     </section>
 </main>
 </main>
