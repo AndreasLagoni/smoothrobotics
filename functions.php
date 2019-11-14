@@ -125,4 +125,21 @@ function custom_post_type_teammembers() {
     register_post_type('Members',$args);
 }
 add_action('init','custom_post_type_teammembers');
+// Her tilføjer vi mulighed for admins at lave om på contact page. 
+function smoothrobotics_contact_callout($wp_customize) {
+    // Tilføjer så man kan ændre headline i admin panel
+    $wp_customize -> add_section('smoothrobotics-contact-callout-section', array(
+        'title' => 'Contact Us'
+    ));
+    $wp_customize->add_setting('smoothrobotics-contact-callout-headline', array(
+        'default' => 'Do you need further information?'
+    ));
+    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'smoothrobotics-contact-callout-headline-control', array(
+        'label' => 'Headline',
+        'section' => 'smoothrobotics-contact-callout-section',
+        'settings' => 'smoothrobotics-contact-callout-headline'
+    )));
+}
+
+add_action('customize_register', 'smoothrobotics_contact_callout');
 ?>

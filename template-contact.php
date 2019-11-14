@@ -7,8 +7,7 @@
 <section class="banner-bannerwrapper contact-banner">
 <article class="banneroverlay"></article>
 <article class="banner-innerwrapper">
-<h1 class="newsbanner-h1">Do you need further 
-information?</h1>
+<h1 class="newsbanner-h1"><?php echo get_theme_mod('smoothrobotics-contact-callout-headline')?></h1>
 <p class="newsbanner-p">We gladly provide you with any further information. if you 
 have any question, do not hesitate to contact us.</p>
 <div class="banner-innercontact">
