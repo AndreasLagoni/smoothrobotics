@@ -165,6 +165,51 @@ function smoothrobotics_custom_callout($wp_customize) {
         'settings' => 'smoothrobotics-contact-callout-contenthead',
         'type' => 'textarea',
     )));
+    // Vi laver også en sektion til about us
+    $wp_customize -> add_section('smoothrobotics-aboutus-callout-section', array(
+        'title' => 'About Us'
+    ));
+    // Vi laver controls til denne sektion
+    $wp_customize->add_setting('smoothrobotics-aboutus-callout-headline', array(
+        'default' => 'ACCELERATE YOUR COMPANYS PRODUCTION'
+    ));
+    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'smoothrobotics-aboutus-callout-headline-control', array(
+        'label' => 'Headline',
+        'section' => 'smoothrobotics-aboutus-callout-section',
+        'settings' => 'smoothrobotics-aboutus-callout-headline',
+        
+    )));
+    // MEREEEEEE
+    $wp_customize->add_setting('smoothrobotics-aboutus-callout-mainheadline', array(
+        'default' => 'What we do
+        for you'
+    ));
+    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'smoothrobotics-aboutus-callout-mainheadline-control', array(
+        'label' => 'Main Headline',
+        'section' => 'smoothrobotics-aboutus-callout-section',
+        'settings' => 'smoothrobotics-aboutus-callout-mainheadline',
+        
+    )));
+    // MEREEEEEE - Maincontent
+    $wp_customize->add_setting('smoothrobotics-aboutus-callout-maincontent', array(
+        'default' => 'Smooth Robotics is born from the need to save time, money, and regrets in welding automatisation. <br><br>
+        Because nobody really needs a robot. You need a solution. Our goal is to perfect how to make robots work on the principle 
+        of human expertise in both quality and efficiency. 
+        <br><br>We want to make you able to use your experiences 
+        in the way your robot works with you. 
+        Detail and focus should never be lost in translation between 
+        human and machine. It should flow naturally. Smooth. 
+        We are a spin-out company from University of Southern 
+        Denmark and part of the Odense Robotics cluster. 
+        <br><br>Contact us! We would be happy to give you a try!'
+    ));
+    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'smoothrobotics-aboutus-callout-maincontent-control', array(
+        'label' => 'Main Content',
+        'section' => 'smoothrobotics-aboutus-callout-section',
+        'settings' => 'smoothrobotics-aboutus-callout-maincontent',
+        'type' => 'textarea',
+        
+    )));
 }
 
 add_action('customize_register', 'smoothrobotics_custom_callout');

@@ -690,6 +690,7 @@ input[type="checkbox"] {
   padding: 20px 60px;
   font-size: 15px;
   background-color: #d97e3f;
+  text-decoration: none;
 }
 
 .footerwrapper {
