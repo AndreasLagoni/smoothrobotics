@@ -180,6 +180,20 @@ h2.contactinfo {
   width: 70%;
 }
 
+.frontbanner-wrapper {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.innerfrontbanner-wrapper {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+}
+
 .archive-itemwrapper {
   padding-top: 100px;
   width: 80%;
