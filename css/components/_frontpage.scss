@@ -23,7 +23,7 @@
   top: 0;
   left: 0;
   width: 30%;
-  height: 5px;
+  height: 3px;
   background-color: #d97e3f;
 }
 .innerbanner-header h1 {
@@ -40,4 +40,125 @@
   padding-right: 70px;
   font-size: 25px;
   color: white;
+}
+// Frontpage-underheader section
+.frontpage-underheader-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  top: -100px;
+  display: flex;
+  justify-content: space-between;
+}
+.frontpage-underheader-item {
+  width: 28%;
+  display: flex;
+  flex-direction: column;
+  background-color: #f7f7f7;
+}
+.underheader-item-banner {
+  width: 100%;
+  height: 200px;
+  background-color: #1b2347;
+}
+.underheader-item-content {
+  padding: 25px 25px;
+}
+.underheader-item-content h3 {
+  font-size: 25px;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+.underheader-item-content p {
+  font-size: 25px;
+}
+// Breaker section
+.section-breaker {
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+.thebreaker {
+  width: 80%;
+  margin: 0 auto;
+  border: 1px solid #707070;
+  border-radius: 15px;
+  opacity: 0.7;
+}
+// Section quickinfo
+.smoothtool-quickinfo-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 80px;
+}
+.smoothtool-quickinfo-item {
+  width: 28%;
+}
+.smoothtool-quickinfo-item h3 {
+  font-size: 30px;
+  font-weight: 300;
+}
+.item-header {
+  padding: 10px 0;
+  position: relative;
+}
+.item-header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30%;
+  height: 3px;
+  background-color: #d97e3f;
+}
+// Smoothtool maincontent
+.smoothtool-maincontent {
+  width: 100%;
+  padding: 70px 10%;
+  margin: 0 auto;
+  background-color: #1b2347;
+}
+.smoothtool-maincontent-banner {
+  height: 255px;
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+  background-image: url("http://localhost/wordpress/wp-content/uploads/2019/11/dots1x.png");
+  background-size: cover;
+}
+.maincontent-banner-header {
+  position: relative;
+  padding: 10px 0;
+}
+.maincontent-banner-header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25%;
+  height: 3px;
+  background-color: #d97e3f;
+}
+.maincontent-banner-header h2 {
+  color: white;
+}
+.smoothtool-process-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.smoothtool-process-item {
+  position: relative;
+  width: 18%;
+  color: white;
+}
+.arrowright-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.arrowright-wrapper i {
+  font-size: 40px;
+  color: #d97e3f;
 }
