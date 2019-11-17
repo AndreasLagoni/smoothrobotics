@@ -36,15 +36,10 @@ else:
     echo "No news found";
 
 endif;
-
-previous_posts_link( '&laquo; Newer posts' );
-next_posts_link( 'Older posts &raquo;');
-
-
 ?>
-
 </section>
 <div class="archive-navigate-nextpage">
+    <?php echo paginate_links();?>
 </div>
 </main>
 <?php get_footer();?>

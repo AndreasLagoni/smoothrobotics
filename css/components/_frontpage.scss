@@ -83,7 +83,7 @@
   margin: 0 auto;
   border: 1px solid #707070;
   border-radius: 15px;
-  opacity: 0.7;
+  opacity: 0.3;
 }
 // Section quickinfo
 .smoothtool-quickinfo-wrapper {
@@ -161,4 +161,84 @@
 .arrowright-wrapper i {
   font-size: 40px;
   color: #d97e3f;
+}
+// Info about us
+.frontpage-info-aboutus {
+  width: 80%;
+  margin: 0 auto;
+  padding: 100px 0;
+  display: flex;
+}
+.info-aboutus-row1 {
+  padding: 10px 0;
+  padding-right: 80px;
+  width: 30%;
+  position: relative;
+}
+.info-aboutus-row1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35%;
+  height: 3px;
+  background-color: #d97e3f;
+}
+.info-aboutus-row2 {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.info-aboutus-item {
+  width: 50%;
+  margin-bottom: 80px;
+  padding-right: 40px;
+  padding-left: 50px;
+  position: relative;
+}
+.info-aboutus-item h3 {
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+.info-aboutus-circle {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  background-color: #1b2347;
+  border-radius: 50%;
+}
+// Section numbers
+.section-numbers {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.numbers-article-item {
+  width: 28%;
+  height: 280px;
+  background-color: black;
+}
+// Section 2 break
+.section-breaker.second {
+  padding: 100px 0;
+}
+// Partners
+.section-partners-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  padding-top: 10px;
+  position: relative;
+}
+.section-partners-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15%;
+  height: 3px;
+  background-color: #d97e3f;
 }

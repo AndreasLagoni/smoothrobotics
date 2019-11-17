@@ -131,6 +131,7 @@ for you</h2>
 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
 Sed cras ornare arcu dui vivamus arcu. sed do eiusmod tempor 
 incididunt ut labore et dolore magna aliqua. </p>
+<div class="info-aboutus-circle"></div>
 </div>
 <div class="info-aboutus-item">
 <h3>Save time and effort.</h3>
@@ -138,6 +139,7 @@ incididunt ut labore et dolore magna aliqua. </p>
 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
 Sed cras ornare arcu dui vivamus arcu. sed do eiusmod tempor 
 incididunt ut labore et dolore magna aliqua. </p>
+<div class="info-aboutus-circle"></div>
 </div>
 <div class="info-aboutus-item">
 <h3>Save time and effort.</h3>
@@ -145,6 +147,7 @@ incididunt ut labore et dolore magna aliqua. </p>
 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
 Sed cras ornare arcu dui vivamus arcu. sed do eiusmod tempor 
 incididunt ut labore et dolore magna aliqua. </p>
+<div class="info-aboutus-circle"></div>
 </div>
 <div class="info-aboutus-item">
 <h3>Save time and effort.</h3>
@@ -152,6 +155,7 @@ incididunt ut labore et dolore magna aliqua. </p>
 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
 Sed cras ornare arcu dui vivamus arcu. sed do eiusmod tempor 
 incididunt ut labore et dolore magna aliqua. </p>
+<div class="info-aboutus-circle"></div>
 </div>
 </article>
 </section>
@@ -160,8 +164,14 @@ incididunt ut labore et dolore magna aliqua. </p>
 <article class="numbers-article-item"></article>
 <article class="numbers-article-item"></article>
 </section>
+<section class="section-breaker second">
+    <article class="thebreaker"></article>
+</section>
 <section class="section-partners-wrapper">
-
+<h2>Our Partners</h2>
+<article class="partners-wrapper">
+    
+</article>
 </section>
 </main>
 
