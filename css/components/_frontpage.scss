@@ -9,4 +9,35 @@
   width: 80%;
   height: 100%;
   margin: 0 auto;
+  padding: 15% 0;
+  padding-right: 600px;
+}
+.innerbanner-header {
+  position: relative;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+.innerbanner-header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30%;
+  height: 5px;
+  background-color: #d97e3f;
+}
+.innerbanner-header h1 {
+  color: white;
+}
+.innerbanner-header h2 {
+  color: white;
+  font-size: 50px;
+}
+.innerbanner-text {
+  display: flex;
+}
+.innerbanner-text p {
+  padding-right: 70px;
+  font-size: 25px;
+  color: white;
 }
