@@ -127,11 +127,24 @@ function custom_post_type_teammembers() {
 add_action('init','custom_post_type_teammembers');
 // Her tilføjer vi mulighed for admins at lave om på contact page. 
 function smoothrobotics_custom_callout($wp_customize) {
-    // Tilføjer så man kan ændre headline i admin panel
     // Først laver vi selve sektionen til admin panelen under customize.
+    // Laver en sektion som gør det muligt at ændre image. 
+    $wp_customize -> add_section('smoothrobotics-logo-callout-section', array(
+        'title' => 'Logo'
+    ));
+    $wp_customize->add_setting('smoothrobotics-logo-callout-logo');
+    $wp_customize->add_control(new WP_Customize_Cropped_Image_Control($wp_customize, 'smoothrobotics-logo-callout-logo-control', array(
+        'label' => 'Logo på siden',
+        'section' => 'smoothrobotics-logo-callout-section',
+        'settings' => 'smoothrobotics-logo-callout-logo',
+        'width' => 140,
+        'height' => 130,
+    )));
+    // Contact us sektion
     $wp_customize -> add_section('smoothrobotics-contact-callout-section', array(
         'title' => 'Contact Us'
     ));
+    
     // Det næste stykke er til selve under sektionen "contact us"
     // Det første er Image
     $wp_customize->add_setting('smoothrobotics-contact-callout-bannerimage');

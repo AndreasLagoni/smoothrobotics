@@ -11,7 +11,7 @@
 
     <header class="topHeader">
         <nav class="topNav-logo">
-            <img src="http://localhost/wordpress/wp-content/uploads/2019/11/logo.png" alt="">
+            <img src="<?php echo wp_get_attachment_url(get_theme_mod('smoothrobotics-logo-callout-logo'));?>" alt="">
         </nav>
     <nav class="topNav-links">
     <?php wp_nav_menu (
