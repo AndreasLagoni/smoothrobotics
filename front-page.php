@@ -1,6 +1,6 @@
 <?php get_header();?>
 <main class="wrapper">
-<section class="frontbanner-wrapper" style="background-image: url('http://localhost/wordpress/wp-content/uploads/2019/11/Group-248-1.png')">
+<section class="frontbanner-wrapper" style="background-image: url('<?php echo wp_get_attachment_url(get_theme_mod('smoothrobotics-frontpage-callout-headimage'));?>')">
 <div class="innerfrontbanner-wrapper">
     <div class="innerbanner-header">
     <h1>Smooth Robotics</h1>

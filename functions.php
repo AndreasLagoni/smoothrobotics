@@ -140,6 +140,20 @@ function smoothrobotics_custom_callout($wp_customize) {
         'width' => 140,
         'height' => 130,
     )));
+    // Laver muligt at ændre ting på forsiden.
+    $wp_customize -> add_section('smoothrobotics-frontpage-callout-section', array(
+        'title' => 'Frontpage'
+    ));
+    $wp_customize->add_setting('smoothrobotics-frontpage-callout-headimage');
+    $wp_customize->add_control(new WP_Customize_Cropped_Image_Control($wp_customize, 'smoothrobotics-logo-callout-logo-control', array(
+        'label' => 'Header image på forsiden',
+        'section' => 'smoothrobotics-frontpage-callout-section',
+        'settings' => 'smoothrobotics-frontpage-callout-headimage',
+        'flex_width' => true,
+        'flex_height' => true,
+        'width' => 1680,
+        'height' => 1080,
+    )));
     // Contact us sektion
     $wp_customize -> add_section('smoothrobotics-contact-callout-section', array(
         'title' => 'Contact Us'
