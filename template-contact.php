@@ -4,8 +4,9 @@
  -->
 <?php get_header();?>
 <main class="main-wrapper">
-<section class="banner-bannerwrapper contact-banner">
-<article class="banneroverlay"></article>
+<section class="banner-bannerwrapper contact-banner" style="background-image: url('<?php echo wp_get_attachment_url(get_theme_mod('smoothrobotics-contact-callout-bannerimage'));?>')">
+<article class="banneroverlay">
+</article>
 <article class="banner-innerwrapper">
 <h1 class="newsbanner-h1"><?php echo get_theme_mod('smoothrobotics-contact-callout-headline', 'Do you need further information?')?></h1>
 <p class="newsbanner-p"><?php echo get_theme_mod('smoothrobotics-contact-callout-paragraph', 'We gladly provide you with any further information. if you 

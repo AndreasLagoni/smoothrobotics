@@ -133,7 +133,17 @@ function smoothrobotics_custom_callout($wp_customize) {
         'title' => 'Contact Us'
     ));
     // Det næste stykke er til selve under sektionen "contact us"
-    // Det første er headline
+    // Det første er Image
+    $wp_customize->add_setting('smoothrobotics-contact-callout-bannerimage');
+    $wp_customize->add_control(new WP_Customize_Cropped_Image_Control($wp_customize, 'smoothrobotics-contact-callout-bannerimage-control', array(
+        'label' => 'Banner Image',
+        'section' => 'smoothrobotics-contact-callout-section',
+        'settings' => 'smoothrobotics-contact-callout-bannerimage',
+        'flex_width' => true,
+        'width' => 1000,
+        'height' => 500,
+    )));
+    // Det næste er headline
     $wp_customize->add_setting('smoothrobotics-contact-callout-headline', array(
         'default' => 'Do you need further information?',
     ));
@@ -169,6 +179,16 @@ function smoothrobotics_custom_callout($wp_customize) {
     $wp_customize -> add_section('smoothrobotics-aboutus-callout-section', array(
         'title' => 'About Us'
     ));
+    // Det første er Image
+    $wp_customize->add_setting('smoothrobotics-aboutus-callout-bannerimage');
+    $wp_customize->add_control(new WP_Customize_Cropped_Image_Control($wp_customize, 'smoothrobotics-aboutus-callout-bannerimage-control', array(
+        'label' => 'Banner Image',
+        'section' => 'smoothrobotics-aboutus-callout-section',
+        'settings' => 'smoothrobotics-aboutus-callout-bannerimage',
+        'flex_width' => true,
+        'width' => 1000,
+        'height' => 500,
+    )));
     // Vi laver controls til denne sektion
     $wp_customize->add_setting('smoothrobotics-aboutus-callout-headline', array(
         'default' => 'ACCELERATE YOUR COMPANYS PRODUCTION'
