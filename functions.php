@@ -135,7 +135,7 @@ function smoothrobotics_custom_callout($wp_customize) {
     // Det næste stykke er til selve under sektionen "contact us"
     // Det første er headline
     $wp_customize->add_setting('smoothrobotics-contact-callout-headline', array(
-        'default' => 'Do you need further information?'
+        'default' => 'Do you need further information?',
     ));
     $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'smoothrobotics-contact-callout-headline-control', array(
         'label' => 'Headline',

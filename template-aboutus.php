@@ -8,14 +8,24 @@
 <article class="banneroverlay"></article>
 <article class="banner-innerwrapper">
 <h2 class="aboutus-h2">THE SMOOTHTOOL</h2>
-<h1 class="aboutus-h1"><?php echo get_theme_mod('smoothrobotics-aboutus-callout-headline')?></h1>
+<h1 class="aboutus-h1"><?php echo get_theme_mod('smoothrobotics-aboutus-callout-headline', 'ACCELERATE YOUR COMPANYS PRODUCTION')?></h1>
 </article>
 </section>
 <main class="aboutuswrapper">
     <section class="aboutus-intro-wrapper">
         <article class="intro-content">
-            <h2><?php echo get_theme_mod('smoothrobotics-aboutus-callout-mainheadline')?></h2>
-<p><?php echo get_theme_mod('smoothrobotics-aboutus-callout-maincontent')?></p>
+            <h2><?php echo get_theme_mod('smoothrobotics-aboutus-callout-mainheadline', 'What we do
+        for you')?></h2>
+<p><?php echo get_theme_mod('smoothrobotics-aboutus-callout-maincontent','Smooth Robotics is born from the need to save time, money, and regrets in welding automatisation. <br><br>
+        Because nobody really needs a robot. You need a solution. Our goal is to perfect how to make robots work on the principle 
+        of human expertise in both quality and efficiency. 
+        <br><br>We want to make you able to use your experiences 
+        in the way your robot works with you. 
+        Detail and focus should never be lost in translation between 
+        human and machine. It should flow naturally. Smooth. 
+        We are a spin-out company from University of Southern 
+        Denmark and part of the Odense Robotics cluster. 
+        <br><br>Contact us! We would be happy to give you a try!' )?></p>
         </article>
         <article class="intro-image">
             <img src="http://localhost/wordpress/wp-content/uploads/2019/11/Group-248.png" alt="">
