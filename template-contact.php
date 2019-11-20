@@ -4,13 +4,12 @@
  -->
 <?php get_header();?>
 <main class="main-wrapper">
-<section class="banner-bannerwrapper contact-banner" style="background-image: url('<?php echo wp_get_attachment_url(get_theme_mod('smoothrobotics-contact-callout-bannerimage'));?>')">
+<section class="banner-bannerwrapper contact-banner" style="background-image: url('<?php the_field('header_image');  ?>')">
 <article class="banneroverlay">
 </article>
 <article class="banner-innerwrapper">
-<h1 class="newsbanner-h1"><?php echo get_theme_mod('smoothrobotics-contact-callout-headline', 'Do you need further information?')?></h1>
-<p class="newsbanner-p"><?php echo get_theme_mod('smoothrobotics-contact-callout-paragraph', 'We gladly provide you with any further information. if you 
-        have any question, do not hesitate to contact us.')?></p>
+<h1 class="newsbanner-h1"><?php echo get_post_meta($post->ID, 'header_headline', true);?></h1>
+<p class="newsbanner-p"><?php echo get_post_meta($post->ID, 'header_subheadline', true);?></p>
 <div class="banner-innercontact">
     <div class="banner-innercontactsocialitem">
         <i class="fas fa-mobile-alt"></i>
@@ -29,7 +28,7 @@
 </section>
 <section class="contact-wrapper">
     <article class="contact-info">
-        <h2 class="contactinfo"><?php echo get_theme_mod('smoothrobotics-contact-callout-contenthead', 'Ask about our SmoothTool, Use Cases, Pricing, partner and implementation for your business.')?></h2>
+        <h2 class="contactinfo"><?php echo get_post_meta($post->ID, 'main_content_text', true);?></h2>
     </article>
     <article class="contact-form">
     <?php if(have_posts()) : while(have_posts()) : the_post();?>

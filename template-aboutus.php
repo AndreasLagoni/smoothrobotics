@@ -4,7 +4,7 @@
  -->
 <?php get_header();?>
 <main class="main-wrapper">
-<section class="banner-bannerwrapper about-banner"  style="background-image: url('<?php echo wp_get_attachment_url(get_theme_mod('smoothrobotics-aboutus-callout-bannerimage'));?>')">
+<section class="banner-bannerwrapper about-banner"  style="background-image: url('<?php the_field('header_image');  ?>')">
 <article class="banneroverlay"></article>
 <article class="banner-innerwrapper">
 <h2 class="aboutus-h2">THE SMOOTHTOOL</h2>
