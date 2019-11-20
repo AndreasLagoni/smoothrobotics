@@ -17,6 +17,7 @@
 .intro-content {
   padding: 5px 0;
   position: relative;
+  padding-right: 100px;
 }
 .intro-content::after {
   content: "";
@@ -33,7 +34,7 @@
 }
 .intro-content h2 {
   font-size: 70px;
-  width: 50%;
+  width: 80%;
   margin: 20px 0;
   line-height: 80%;
 }
@@ -41,9 +42,8 @@
   font-size: 20px;
 }
 .intro-image {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 // Second section - quote and image
 .quoteimagewrapper {

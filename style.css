@@ -788,6 +788,7 @@ input[type="checkbox"] {
 .intro-content {
   padding: 5px 0;
   position: relative;
+  padding-right: 100px;
 }
 
 .intro-content::after {
@@ -807,7 +808,7 @@ input[type="checkbox"] {
 
 .intro-content h2 {
   font-size: 70px;
-  width: 50%;
+  width: 80%;
   margin: 20px 0;
   line-height: 80%;
 }
@@ -817,15 +818,8 @@ input[type="checkbox"] {
 }
 
 .intro-image {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .quoteimagewrapper {
