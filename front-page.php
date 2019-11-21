@@ -3,25 +3,12 @@
 <section class="frontbanner-wrapper" style="background-image: url('<?php the_field('background_image');  ?>')">
 <div class="innerfrontbanner-wrapper">
     <div class="innerbanner-header">
-    <h1>Smooth Robotics</h1>
-    <h2>Fremtidens Automatisering</h2>
+    <h1><?php echo get_post_meta($post->ID, 'header_title', true);?></h1>
+    <h2><?php echo get_post_meta($post->ID, 'header_subtitle', true);?></h2>
     </div>
     <div class="innerbanner-text">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-magna aliqua. Tristique 
-sollicitudin nibh sit amet 
-commodo nulla. Sed blandit 
-libero volutpat sed cras 
-ornare arcu dui.</p>
-<p>Lorem ipsum dolor sit amet, 
-consectetur adipiscing elit, 
-sed do eiusmod tempor 
-incididunt ut labore et dolore 
-magna aliqua. Tristique 
-sollicitudin nibh sit amet 
-commodo nulla. Sed blandit 
-libero volutpat sed cras 
-ornare arcu dui.</p>
+    <p><?php echo get_post_meta($post->ID, 'header_column_1', true);?></p>
+<p><?php echo get_post_meta($post->ID, 'header_column_2', true);?></p>
     </div>
 </div>
 </section>
@@ -29,24 +16,21 @@ ornare arcu dui.</p>
     <article class="frontpage-underheader-item">
         <div class="underheader-item-banner"></div>
         <div class="underheader-item-content">
-        <h3>New spade to smoothtool</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        <p><?php echo get_post_meta($post->ID, 'first_section_item_1', true);?></p>
         </div>
         <div class="underheader-item-link"></div>
     </article>
     <article class="frontpage-underheader-item">
     <div class="underheader-item-banner"></div>
     <div class="underheader-item-content">
-    <h3>New spade to smoothtool</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+    <p><?php echo get_post_meta($post->ID, 'first_section_item_2', true);?></p>
     </div>
     <div class="underheader-item-link"></div>
     </article>
     <article class="frontpage-underheader-item">
     <div class="underheader-item-banner"></div>
     <div class="underheader-item-content">
-    <h3>New spade to smoothtool</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+    <p><?php echo get_post_meta($post->ID, 'first_section_item_3', true);?></p>
     </div>
     <div class="underheader-item-link"></div>
     </article>
@@ -56,38 +40,20 @@ ornare arcu dui.</p>
 </section>
 <section class="smoothtool-quickinfo-wrapper">
     <article class="smoothtool-quickinfo-item item-header">
-    <h2>Smooth Tool. </h2>
-    <h3>- Made by welders, for welders.</h3>
+    <h2><?php echo get_post_meta($post->ID, 'second_section_main_title', true);?> </h2>
+    <h3><?php echo get_post_meta($post->ID, 'second_section_subtitle', true);?></h3>
     </article>
     <article class="smoothtool-quickinfo-item">
-    <p>Lorem ipsum dolor sit amet, consectetur 
-    adipiscing elit, sed do eiusmod tempor 
-    incididunt ut labore et dolore magna 
-    aliqua. Tristique sollicitudin nibh sit amet 
-    commodo nulla. Sed blandit libero 
-    volutpat sed cras ornare arcu dui. 
-    Fermentum odio eu feugiat pretium nibh 
-    ipsum consequat nisl. Enim sed faucibus 
-    turpis in eu mi bibendum neque. Sit amet 
-    luctus venenatis lectus magna fringilla. 
-    Neque gravida in fermentum et sollicitudin 
-    ac. </p></article>
-    <article class="smoothtool-quickinfo-item"><p>Lorem ipsum dolor sit amet, consectetur 
-    adipiscing elit, sed do eiusmod tempor 
-    incididunt ut labore et dolore magna 
-    aliqua. Tristique sollicitudin nibh sit amet 
-    commodo nulla. Sed blandit libero 
-    volutpat sed cras ornare arcu dui. 
-    Fermentum odio eu feugiat pretium nibh 
-    ipsum consequat nisl. Enim sed faucibus 
-    turpis in eu mi bibendum neque. Sit amet 
-    luctus venenatis lectus magna fringilla. 
-    Neque gravida in fermentum et sollicitudin 
-    ac. </p></article>
+    <p><?php echo get_post_meta($post->ID, 'second_section_main_content_column_1', true);?></p></article>
+    <article class="smoothtool-quickinfo-item">
+    <p>
+    <?php echo get_post_meta($post->ID, 'second_section_main_content_column_2', true);?>
+    </p>
+    </article>
 </section>
 <section class="smoothtool-maincontent">
     <article class="smoothtool-maincontent-banner">
-        <div class="maincontent-banner-header"><h2>How SmoothTool Works</h2></div>
+        <div class="maincontent-banner-header"><h2><?php echo get_post_meta($post->ID, 'third_section_title', true);?></h2></div>
     </article>
     <article class="smoothtool-process-wrapper">
     <div class="smoothtool-process-item">

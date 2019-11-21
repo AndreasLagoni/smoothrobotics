@@ -619,6 +619,50 @@ h2.contactinfo {
           align-items: center;
 }
 
+.singlepage-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.singlepage-maincontent {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  border-right: 1px solid #c2c2c2;
+  padding-right: 50px;
+  padding-top: 70px;
+}
+
+.singlepage-maincontent p {
+  color: #1b2347;
+  font-size: 20px;
+}
+
+.singlepage-maincontent h1 {
+  color: #1b2347;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.singlepage-maincontent h1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 3px;
+  background-color: #d97e3f;
+}
+
+.singlepage-aside {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
 .banner-innercontact {
   display: -webkit-box;
   display: -ms-flexbox;

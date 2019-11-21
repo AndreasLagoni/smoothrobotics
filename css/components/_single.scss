@@ -1,0 +1,33 @@
+// single pages
+.singlepage-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+}
+.singlepage-maincontent {
+  flex: 3;
+  border-right: 1px solid rgb(194, 194, 194);
+  padding-right: 50px;
+  padding-top: 70px;
+}
+.singlepage-maincontent p {
+  color: #1b2347;
+  font-size: 20px;
+}
+.singlepage-maincontent h1 {
+  color: #1b2347;
+  position: relative;
+  margin-bottom: 30px;
+}
+.singlepage-maincontent h1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 3px;
+  background-color: #d97e3f;
+}
+.singlepage-aside {
+  flex: 2;
+}
