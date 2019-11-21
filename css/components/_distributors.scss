@@ -17,6 +17,21 @@
   margin-bottom: 20px;
 }
 // Selve appen
-.wps1-search {
-  background: #1b2347;
+// Nogen af styles skal være med !important
+.custombg {
+  background: #1b2347 !important;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 100;
+  height: 500px;
+  width: 30%;
+}
+.customdisplay {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.customcanvas {
+  width: 70% !important;
 }

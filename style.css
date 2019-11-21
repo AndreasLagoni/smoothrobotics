@@ -683,8 +683,28 @@ h2.contactinfo {
   margin-bottom: 20px;
 }
 
-.wps1-search {
-  background: #1b2347;
+.custombg {
+  background: #1b2347 !important;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 100;
+  height: 500px;
+  width: 30%;
+}
+
+.customdisplay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.customcanvas {
+  width: 70% !important;
 }
 
 .banner-innercontact {

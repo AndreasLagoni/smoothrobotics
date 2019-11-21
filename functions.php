@@ -142,4 +142,23 @@ function smoothrobotics_custom_callout($wp_customize) {
     )));
 };
 add_action('customize_register', 'smoothrobotics_custom_callout');
+// Custom WP Store Locator
+add_filter( 'wpsl_templates', 'custom_templates' );
+
+function custom_templates( $templates ) {
+
+    /**
+     * The 'id' is for internal use and must be unique ( since 2.0 ).
+     * The 'name' is used in the template dropdown on the settings page.
+     * The 'path' points to the location of the custom template,
+     * in this case the folder of your active theme.
+     */
+    $templates[] = array (
+        'id'   => 'custom',
+        'name' => 'Custom template',
+        'path' => get_stylesheet_directory() . '/' . 'wpsl-templates/custom.php',
+    );
+
+    return $templates;
+}
 ?>
