@@ -1,3 +1,8 @@
+<!-- 
+
+    Template name: News (SmoothRobotics)
+ -->
+
 <?php get_header();?>
 <main class="main-wrapper">
 <section class="banner-bannerwrapper archive-banner" 
