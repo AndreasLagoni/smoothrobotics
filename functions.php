@@ -20,7 +20,7 @@ function add_custom_pt( $query ) {
     
     if ( !is_admin() && $query->is_main_query() && $query->is_post_type_archive('news')) {
       $query->set( 'post_type', array( 'News' ) );
-      $query->set( 'order', 'ASC' );
+      $query->set( 'order', 'DESC' );
       $query->set( 'posts_per_page', 6 );
     }
   }
@@ -139,6 +139,27 @@ function smoothrobotics_custom_callout($wp_customize) {
         'settings' => 'smoothrobotics-logo-callout-logo',
         'width' => 140,
         'height' => 130,
+    )));
+    // Vi skal også have mulighed for at ændre bannere til news / single
+    $wp_customize -> add_section('smoothrobotics-banner-callout-section', array(
+        'title' => 'Banner'
+    ));
+    $wp_customize->add_setting('smoothrobotics-banner-callout-news');
+    $wp_customize->add_control(new WP_Customize_Cropped_Image_Control($wp_customize, 'smoothrobotics-banner-callout-news-control', array(
+        'label' => 'Banner på siden news',
+        'section' => 'smoothrobotics-banner-callout-section',
+        'settings' => 'smoothrobotics-banner-callout-news',
+        'flex_width' => true,
+        'flex_height' => true,
+    )));
+    // Vi tilføjer også en til single
+    $wp_customize->add_setting('smoothrobotics-banner-callout-single');
+    $wp_customize->add_control(new WP_Customize_Cropped_Image_Control($wp_customize, 'smoothrobotics-banner-callout-single-control', array(
+        'label' => 'Banner på single siden',
+        'section' => 'smoothrobotics-banner-callout-section',
+        'settings' => 'smoothrobotics-banner-callout-single',
+        'flex_width' => true,
+        'flex_height' => true,
     )));
 };
 add_action('customize_register', 'smoothrobotics_custom_callout');

@@ -1,7 +1,9 @@
 <?php get_header();?>
 <main class="main-wrapper">
 <section class="banner-bannerwrapper archive-banner" 
-style="background-image: url('')">
+style="background-image: url(
+<?php echo wp_get_attachment_url(get_theme_mod('smoothrobotics-banner-callout-news'));?>
+)">
 <article class="banneroverlay"></article>
 <article class="banner-innerwrapper">
 <h1 class="newsbanner-h1">Company News.</h1>

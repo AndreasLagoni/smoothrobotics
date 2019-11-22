@@ -1,5 +1,7 @@
 <?php get_header();?>
-<section class="banner-bannerwrapper archive-banner">
+<section class="banner-bannerwrapper archive-banner" style="
+background-image: url(<?php echo wp_get_attachment_url(get_theme_mod('smoothrobotics-banner-callout-single'));?>)
+">
 <article class="banneroverlay"></article>
 <article class="banner-innerwrapper">
 <h1 class="newsbanner-h1">Company News.</h1>
@@ -19,7 +21,19 @@
 
 <?php endwhile; endif; ?>
 </div>
-<div class="singlepage-aside"></div>
+<div class="singlepage-aside">
+<div class="aside-socials">
+<a href="">
+<i class="fab fa-youtube-square"></i>
+</a>
+<a href="">
+<i class="fab fa-facebook-square"></i>
+</a>
+<a href="">
+    <i class="fab fa-linkedin"></i> 
+</a>
+</div>
+</div>
 
 
 
