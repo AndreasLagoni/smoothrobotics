@@ -1,6 +1,6 @@
 .topHeader {
   width: 80%;
-  height: 140px;
+  height: 110px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -9,6 +9,13 @@
 .topNav-links ul {
   list-style: none;
   display: flex;
+}
+.topNav-logo {
+  height: 110px;
+}
+.topNav-logo img {
+  height: 100%;
+  max-width: 100%;
 }
 .topNav-links ul li {
   margin-left: 61px;

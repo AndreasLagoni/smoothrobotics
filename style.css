@@ -48,7 +48,7 @@ p {
 
 li a {
   color: #1b2347;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 h2.contactinfo {
@@ -58,7 +58,7 @@ h2.contactinfo {
 
 .topHeader {
   width: 80%;
-  height: 140px;
+  height: 110px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -76,6 +76,15 @@ h2.contactinfo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.topNav-logo {
+  height: 110px;
+}
+
+.topNav-logo img {
+  height: 100%;
+  max-width: 100%;
 }
 
 .topNav-links ul li {
@@ -694,7 +703,7 @@ h2.contactinfo {
   margin: 0;
 }
 
-.customdisplay {
+#wpsl-search-wrap .customdisplay {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -706,6 +715,7 @@ h2.contactinfo {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 15px 15px;
 }
 
 .customcanvas {
@@ -715,6 +725,27 @@ h2.contactinfo {
 .customcanvas-header h2 {
   color: white;
   margin-bottom: 10px;
+}
+
+.customlayout_ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.customlayout_ul li {
+  margin-right: 140px;
+}
+
+.customlayout_ul li p {
+  color: #1b2347;
+}
+
+#wpsl-search-btn.custombtn {
+  padding: 15px 80px;
+  background: transparent;
+  color: white;
+  border: 1px solid white;
 }
 
 .banner-innercontact {

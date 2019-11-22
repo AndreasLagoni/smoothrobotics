@@ -46,7 +46,7 @@ if ( $this->use_category_filter() ) {
     $output .= $this->create_category_filter();
 }
  
-$output .= "\t\t\t\t" . '<div class="wpsl-search-btn-wrap"><input id="wpsl-search-btn" type="submit" value="' . esc_attr( $wpsl->i18n->get_translation( 'search_btn_label', __( 'Search', 'wpsl' ) ) ) . '"></div>' . "\r\n";
+$output .= "\t\t\t\t" . '<div class="wpsl-search-btn-wrap"><input id="wpsl-search-btn" class="custombtn" type="submit" value="' . esc_attr( $wpsl->i18n->get_translation( 'search_btn_label', __( 'Search', 'wpsl' ) ) ) . '"></div>' . "\r\n";
 
 $output .= "\t\t" . '</form>' . "\r\n";
 $output .= "\t\t" . '</div>' . "\r\n";
@@ -62,7 +62,7 @@ if ( $wpsl_settings['reset_map'] ) {
 
 $output .= "\t" . '<div id="wpsl-result-list">' . "\r\n";
 $output .= "\t\t" . '<div id="wpsl-stores" '. $autoload_class .'>' . "\r\n";
-$output .= "\t\t\t" . '<ul></ul>' . "\r\n";
+$output .= "\t\t\t" . '<ul class="customlayout_ul"></ul>' . "\r\n";
 $output .= "\t\t" . '</div>' . "\r\n";
 $output .= "\t\t" . '<div id="wpsl-direction-details">' . "\r\n";
 $output .= "\t\t\t" . '<ul></ul>' . "\r\n";

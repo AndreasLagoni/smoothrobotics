@@ -28,11 +28,12 @@
   width: 30%;
   margin: 0;
 }
-.customdisplay {
+#wpsl-search-wrap .customdisplay {
   display: flex;
   align-items: center;
   color: white;
   flex-direction: column;
+  padding: 15px 15px;
 }
 .customcanvas {
   width: 70% !important;
@@ -40,4 +41,19 @@
 .customcanvas-header h2 {
   color: white;
   margin-bottom: 10px;
+}
+.customlayout_ul {
+  display: flex;
+}
+.customlayout_ul li {
+  margin-right: 140px;
+}
+.customlayout_ul li p {
+  color: #1b2347;
+}
+#wpsl-search-btn.custombtn {
+  padding: 15px 80px;
+  background: transparent;
+  color: white;
+  border: 1px solid white;
 }
