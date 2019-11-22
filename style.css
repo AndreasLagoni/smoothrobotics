@@ -122,14 +122,6 @@ h2.contactinfo {
   z-index: 0;
 }
 
-.archive-banner {
-  background-image: url("http://localhost/wordpress/wp-content/uploads/2019/11/news-banner.png");
-}
-
-.contact-banner {
-  background-image: url("http://localhost/wordpress/wp-content/uploads/2019/11/contact.png");
-}
-
 .banneroverlay {
   position: absolute;
   top: 0;

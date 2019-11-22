@@ -1,6 +1,12 @@
 <?php get_header();?>
 <main class="main-wrapper">
-<section class="banner-bannerwrapper archive-banner">
+<section class="banner-bannerwrapper archive-banner" 
+style="background-image: url(
+'<?php 
+echo the_title();
+?>'
+)
+">
 <article class="banneroverlay"></article>
 <article class="banner-innerwrapper">
 <h1 class="newsbanner-h1">Company News.</h1>
@@ -29,9 +35,7 @@ style="background-image: url(<?php echo $thumb_url;?>)">
     </div>
 </article>
 
-<?php endwhile;
-?>
-<?php 
+<?php endwhile; 
 else: 
     echo "No news found";
 
