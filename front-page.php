@@ -57,31 +57,30 @@
     </article>
     <article class="smoothtool-process-wrapper">
     <div class="smoothtool-process-item">
-    <h3>Plan</h3>
-    <p>Plan the whole process 
-    from welding to finish 
-    product</p>
+        <p>
+            <?php echo get_post_meta($post->ID, 'third_section_process_third_section_process_item_1', true);?>
+        </p>
     <div class="arrowright-wrapper"><i class="fas fa-long-arrow-alt-right"></i></div>
     </div>
-    <div class="smoothtool-process-item"><h3>Plan</h3>
-    <p>Plan the whole process 
-    from welding to finish 
-    product</p>
+    <div class="smoothtool-process-item">
+    <p>
+            <?php echo get_post_meta($post->ID, 'third_section_process_third_section_process_item_2', true);?>
+        </p>
     <div class="arrowright-wrapper"><i class="fas fa-long-arrow-alt-right"></i></div></div>
-    <div class="smoothtool-process-item"><h3>Plan</h3>
-    <p>Plan the whole process 
-    from welding to finish 
-    product</p>
+    <div class="smoothtool-process-item">
+    <p>
+            <?php echo get_post_meta($post->ID, 'third_section_process_third_section_process_item_3', true);?>
+        </p>
     <div class="arrowright-wrapper"><i class="fas fa-long-arrow-alt-right"></i></div></div>
-    <div class="smoothtool-process-item"><h3>Plan</h3>
-    <p>Plan the whole process 
-    from welding to finish 
-    product</p>
+    <div class="smoothtool-process-item">
+    <p>
+            <?php echo get_post_meta($post->ID, 'third_section_process_third_section_process_item_4', true);?>
+        </p>
     <div class="arrowright-wrapper"><i class="fas fa-long-arrow-alt-right"></i></div></div>
-    <div class="smoothtool-process-item"><h3>Plan</h3>
-    <p>Plan the whole process 
-    from welding to finish 
-    product</p>
+    <div class="smoothtool-process-item">
+    <p>
+            <?php echo get_post_meta($post->ID, 'third_section_process_third_section_process_item_5', true);?>
+        </p>
     <div class="arrowright-wrapper"><i class="fas fa-long-arrow-alt-right"></i></div></div>
     </article>
 </section>
