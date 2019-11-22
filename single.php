@@ -1,4 +1,10 @@
 <?php get_header();?>
+<section class="banner-bannerwrapper archive-banner">
+<article class="banneroverlay"></article>
+<article class="banner-innerwrapper">
+<h1 class="newsbanner-h1">Company News.</h1>
+</article>
+</section>
 <div class="singlepage-wrapper">
 <div class="singlepage-maincontent">
 <h1>

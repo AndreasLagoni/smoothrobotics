@@ -638,6 +638,7 @@ h2.contactinfo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-bottom: 150px;
 }
 
 .singlepage-maincontent {

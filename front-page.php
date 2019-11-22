@@ -86,40 +86,23 @@
 </section>
 <section class="frontpage-info-aboutus">
 <article class="info-aboutus-row1">
-<h2>What we do
-for you</h2>
+<h2><?php echo get_post_meta($post->ID, 'fourth_section_section_header', true);?></h2>
 </article>
 <article class="info-aboutus-row2">
 <div class="info-aboutus-item">
-<h3>Save time and effort.</h3>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-Sed cras ornare arcu dui vivamus arcu. sed do eiusmod tempor 
-incididunt ut labore et dolore magna aliqua. </p>
+<?php echo get_post_meta($post->ID, 'fourth_section_item_1', true);?>
 <div class="info-aboutus-circle"></div>
 </div>
 <div class="info-aboutus-item">
-<h3>Save time and effort.</h3>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-Sed cras ornare arcu dui vivamus arcu. sed do eiusmod tempor 
-incididunt ut labore et dolore magna aliqua. </p>
+<?php echo get_post_meta($post->ID, 'fourth_section_item_2', true);?>
 <div class="info-aboutus-circle"></div>
 </div>
 <div class="info-aboutus-item">
-<h3>Save time and effort.</h3>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-Sed cras ornare arcu dui vivamus arcu. sed do eiusmod tempor 
-incididunt ut labore et dolore magna aliqua. </p>
+<?php echo get_post_meta($post->ID, 'fourth_section_item_3', true);?>
 <div class="info-aboutus-circle"></div>
 </div>
 <div class="info-aboutus-item">
-<h3>Save time and effort.</h3>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-Sed cras ornare arcu dui vivamus arcu. sed do eiusmod tempor 
-incididunt ut labore et dolore magna aliqua. </p>
+<?php echo get_post_meta($post->ID, 'fourth_section_item_4', true);?>
 <div class="info-aboutus-circle"></div>
 </div>
 </article>
