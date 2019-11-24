@@ -56,4 +56,12 @@
   background: transparent;
   color: white;
   border: 1px solid white;
+  transition: 0.5s all;
+}
+#wpsl-search-btn.custombtn:hover {
+  padding: 15px 80px;
+  background: #d97e3f;
+  color: #1b2347;
+  border: 1px solid white;
+  transition: 0.5s all;
 }
