@@ -39,7 +39,11 @@ background-image: url(<?php echo wp_get_attachment_url(get_theme_mod('smoothrobo
     <label for="email">Email:</label>
     <input type="text">
     <label>
-    <input type="checkbox" name="checkboxaccept" value="value">Hej
+    <input type="checkbox" name="checkboxaccept" value="value">I would like to receive 
+communication and relative 
+news about SmoothTool 
+including updates, services and 
+products.
     </label>
     <button class="std-button subscribe">Subscribe</button>
 

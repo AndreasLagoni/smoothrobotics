@@ -15,6 +15,21 @@ body {
           box-sizing: border-box;
 }
 
+.std-button {
+  margin-top: 50px;
+  color: white;
+  max-width: 300px;
+  padding: 20px 60px;
+  font-size: 20px;
+  background-color: #d97f3f;
+  cursor: pointer;
+}
+
+.std-button:active,
+.std-button:focus {
+  outline: none;
+}
+
 h1,
 h2,
 h3,
@@ -611,6 +626,11 @@ h2.contactinfo {
   width: 15%;
   height: 3px;
   background-color: #d97e3f;
+}
+
+.partners-wrapper {
+  width: 80%;
+  margin: 0 auto;
 }
 
 .archive-itemwrapper {
