@@ -182,6 +182,66 @@ h2.contactinfo {
   width: 70%;
 }
 
+.modalvideo-wrapper {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  padding: 50px 50px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  background-color: rgba(51, 51, 51, 0.698);
+}
+
+.active {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.modalcontent-wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: #1b2347;
+  border-radius: 5px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  padding-top: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 50px;
+}
+
+.modaliframe {
+  width: 100%;
+  height: 100%;
+}
+
+.modaliframe.stop {
+  display: none;
+}
+
+.closemodal {
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  cursor: pointer;
+}
+
 .frontbanner-wrapper {
   height: 100vh;
   width: 100%;
@@ -218,7 +278,25 @@ h2.contactinfo {
   height: 100%;
   margin: 0 auto;
   padding: 15% 0;
-  padding-right: 600px;
+  position: relative;
+}
+
+.halfdiv {
+  width: 50%;
+}
+
+.startiframe {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.startiframe i {
+  font-size: 120px;
+  color: white;
 }
 
 .innerbanner-header {

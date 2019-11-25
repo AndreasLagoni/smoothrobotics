@@ -10,7 +10,7 @@ function load_scripts() {
         switch($post->post_name) 
         {
             case 'home':
-                
+                wp_enqueue_script( 'script', get_template_directory_uri() . '/js/homepage.js', array ( 'jquery' ), 1.1, true);
                 break;
         }
     }   

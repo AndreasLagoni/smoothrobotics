@@ -1,5 +1,15 @@
 <?php get_header();?>
 <main class="wrapper">
+<section class="modalvideo-wrapper">
+    <div class="modalcontent-wrapper">
+        <h2 class="closemodal">X</h2>
+        <iframe  class="modaliframe"
+        src="https://youtube.com/embed/BhGFvzpKLWk" 
+        frameborder="0"
+        allowfullscreen>
+        </iframe>
+    </div>
+</section>
 <section class="frontbanner-wrapper" style="background-image: url('  
  <?php 
 //  the_field('background_image');  ?>
@@ -10,13 +20,16 @@
 </video>
 </div>
 <div class="innerfrontbanner-wrapper">
-    <div class="innerbanner-header">
+    <div class="innerbanner-header halfdiv">
     <h1><?php echo get_post_meta($post->ID, 'header_title', true);?></h1>
     <h2><?php echo get_post_meta($post->ID, 'header_subtitle', true);?></h2>
     </div>
-    <div class="innerbanner-text">
+    <div class="innerbanner-text halfdiv">
     <p><?php echo get_post_meta($post->ID, 'header_column_1', true);?></p>
 <p><?php echo get_post_meta($post->ID, 'header_column_2', true);?></p>
+    </div>
+    <div class="startiframe">
+        <i class="fas fa-play-circle"></i>
     </div>
 </div>
 </section>
