@@ -4,7 +4,8 @@ background-image: url(<?php echo wp_get_attachment_url(get_theme_mod('smoothrobo
 ">
 <article class="banneroverlay"></article>
 <article class="banner-innerwrapper">
-<h1 class="newsbanner-h1">Company News.</h1>
+<h1 class="newsbanner-h1">
+<?php the_title();?></h1>
 </article>
 </section>
 <div class="singlepage-wrapper">
@@ -32,6 +33,17 @@ background-image: url(<?php echo wp_get_attachment_url(get_theme_mod('smoothrobo
 <a href="">
     <i class="fab fa-linkedin"></i> 
 </a>
+</div>
+<div class="aside-subscribenews">
+    <h2>Get Our News Updates</h2>
+    <label for="email">Email:</label>
+    <input type="text">
+    <label>
+    <input type="checkbox" name="checkboxaccept" value="value">Hej
+    </label>
+    <button class="std-button subscribe">Subscribe</button>
+
+
 </div>
 </div>
 

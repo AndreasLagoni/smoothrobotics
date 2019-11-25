@@ -31,6 +31,7 @@
 }
 .singlepage-aside {
   flex: 2;
+  padding-top: 70px;
 }
 // Socials
 .aside-socials {
@@ -49,4 +50,31 @@
 .aside-socials a i {
   text-decoration: none;
   color: #1b2347;
+}
+// Subscribe to newsletter
+.aside-subscribenews {
+  width: 80%;
+  margin-top: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+}
+.aside-subscribenews h2 {
+  font-size: 50px;
+  color: #1b2347;
+  margin-bottom: 20px;
+}
+.aside-subscribenews label,
+.aside-subscribenews input::placeholder,
+.aside-subscribenews input {
+  font-size: 25px;
+  color: #1b2347;
+}
+.aside-subscribenews input {
+  padding: 5px 5px;
+  border-radius: 9px;
+  background: transparent;
+  border: 1px solid #1b2347;
+  margin: 10px 0;
 }
