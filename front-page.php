@@ -1,6 +1,14 @@
 <?php get_header();?>
 <main class="wrapper">
-<section class="frontbanner-wrapper" style="background-image: url('<?php the_field('background_image');  ?>')">
+<section class="frontbanner-wrapper" style="background-image: url('  
+ <?php 
+//  the_field('background_image');  ?>
+')">
+<div class="videowrapper filterblue">
+<video autoplay loop muted >
+<source src="/wordpress/wp-content/themes/smoothrobotics/assets/intro.mp4" type="video/mp4">
+</video>
+</div>
 <div class="innerfrontbanner-wrapper">
     <div class="innerbanner-header">
     <h1><?php echo get_post_meta($post->ID, 'header_title', true);?></h1>
@@ -108,9 +116,16 @@
 </article>
 </section>
 <section class="section-numbers">
-<article class="numbers-article-item"></article>
-<article class="numbers-article-item"></article>
-<article class="numbers-article-item"></article>
+<article class="numbers-article-item">
+    <h1>#1</h1>
+    <p>Welding software in the world</p>
+</article>
+<article class="numbers-article-item">
+    <h1>#1</h1>
+    <p>Welding software in the world</p></article>
+<article class="numbers-article-item">
+    <h1>#1</h1>
+    <p>Welding software in the world</p></article>
 </section>
 <section class="section-breaker second">
     <article class="thebreaker"></article>

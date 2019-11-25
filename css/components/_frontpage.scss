@@ -4,8 +4,28 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+.videowrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.videowrapper.filterblue {
+  background-color: #1b2347;
+}
+.videowrapper video {
+  opacity: 0.5;
+  width: 100%;
+  height: auto;
+  z-index: -1;
 }
 .innerfrontbanner-wrapper {
+  z-index: 100;
   width: 80%;
   height: 100%;
   margin: 0 auto;
@@ -35,6 +55,7 @@
 }
 .innerbanner-text {
   display: flex;
+  z-index: 100;
 }
 .innerbanner-text p {
   padding-right: 70px;
@@ -223,6 +244,12 @@
   width: 28%;
   height: 280px;
   background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
 }
 // Section 2 break
 .section-breaker.second {
