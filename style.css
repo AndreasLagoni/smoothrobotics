@@ -767,12 +767,13 @@ h2.contactinfo {
   padding-top: 100px;
   width: 80%;
   margin: 0 auto;
+  margin-bottom: 150px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(100%, 2fr))[auto-fill];
       grid-template-columns: repeat(auto-fill, minmax(100%, 2fr));
   grid-auto-rows: minmax(400px, auto);
-  grid-gap: 75px;
+  grid-gap: 150px;
 }
 
 .cases-Item {
@@ -782,14 +783,17 @@ h2.contactinfo {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .cases-banner {
   width: 49%;
-  height: 100%;
+  height: 400px;
 }
 
 .cases-content {
+  padding: 5px;
   width: 49%;
   background: none;
 }
@@ -803,9 +807,9 @@ h2.contactinfo {
 
 .casebreaker {
   width: 80%;
-  margin: 0 auto;
+  margin: 75px auto;
   height: 1px;
-  background-color: #1b2347;
+  background-color: #1b234777;
 }
 
 .singlepage-wrapper {

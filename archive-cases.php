@@ -28,9 +28,6 @@ style="background-image: url(<?php echo $thumb_url;?>)">
     <?php the_content();?>
     </div>
 </article>
-<div class="casebreaker">
-    <div class="casebreaker-item"></div>
-</div>
 
 <?php endwhile; 
 else: 

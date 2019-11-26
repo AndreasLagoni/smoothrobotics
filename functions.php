@@ -175,26 +175,36 @@ add_action('init','custom_post_type_cases');
 // Her tilføjer vi mulighed for admins at lave om på contact page. 
 function smoothrobotics_custom_callout($wp_customize) {
     // Først laver vi selve sektionen til admin panelen under customize.
-    // Laver en sektion som gør det muligt at ændre image. 
-    $wp_customize -> add_section('smoothrobotics-logo-callout-section', array(
-        'title' => 'Logo'
+    // Vi laver selve sektionen til Smoothrobotics
+    $wp_customize -> add_section('smoothrobotics-callout-section', array(
+        'title' => 'Smoothrobotics Panel'
     ));
     $wp_customize->add_setting('smoothrobotics-logo-callout-logo');
     $wp_customize->add_control(new WP_Customize_Cropped_Image_Control($wp_customize, 'smoothrobotics-logo-callout-logo-control', array(
         'label' => 'Logo på siden',
-        'section' => 'smoothrobotics-logo-callout-section',
+        'section' => 'smoothrobotics-callout-section',
         'settings' => 'smoothrobotics-logo-callout-logo',
         'width' => 140,
         'height' => 130,
     )));
-    // Vi skal også have mulighed for at ændre bannere til news / single
-    $wp_customize -> add_section('smoothrobotics-banner-callout-section', array(
-        'title' => 'Banner'
+    // Vi skal også have mulighed for at display vores cases, hvis vi i fremtiden ønsker dette
+    $wp_customize->add_setting('smoothrobotics-checkbox-cases', array(
+        'default' => 0,
+        'transport' => 'refresh',
     ));
+    $wp_customize->add_control('smoothrobotics-checkbox-cases-control', array(
+        'label' => __('Skal Cases vises på siden?','ephemeris'),
+        'description' => esc_html__('Tryk på checkboxen hvis i vil have vist jeres cases side'),
+        'section' => 'smoothrobotics-callout-section',
+        'type' => 'checkbox',
+        'settings' => 'smoothrobotics-checkbox-cases',
+
+    ));
+    // Vi skal også have mulighed for at ændre bannere til news / single
     $wp_customize->add_setting('smoothrobotics-banner-callout-news');
     $wp_customize->add_control(new WP_Customize_Cropped_Image_Control($wp_customize, 'smoothrobotics-banner-callout-news-control', array(
         'label' => 'Banner på siden news',
-        'section' => 'smoothrobotics-banner-callout-section',
+        'section' => 'smoothrobotics-callout-section',
         'settings' => 'smoothrobotics-banner-callout-news',
         'flex_width' => true,
         'flex_height' => true,
@@ -203,7 +213,7 @@ function smoothrobotics_custom_callout($wp_customize) {
     $wp_customize->add_setting('smoothrobotics-banner-callout-single');
     $wp_customize->add_control(new WP_Customize_Cropped_Image_Control($wp_customize, 'smoothrobotics-banner-callout-single-control', array(
         'label' => 'Banner på single siden',
-        'section' => 'smoothrobotics-banner-callout-section',
+        'section' => 'smoothrobotics-callout-section',
         'settings' => 'smoothrobotics-banner-callout-single',
         'flex_width' => true,
         'flex_height' => true,
@@ -212,13 +222,14 @@ function smoothrobotics_custom_callout($wp_customize) {
     $wp_customize->add_setting('smoothrobotics-banner-callout-cases');
     $wp_customize->add_control(new WP_Customize_Cropped_Image_Control($wp_customize, 'smoothrobotics-banner-callout-cases-control', array(
         'label' => 'Banner på cases siden',
-        'section' => 'smoothrobotics-banner-callout-section',
+        'section' => 'smoothrobotics-callout-section',
         'settings' => 'smoothrobotics-banner-callout-cases',
         'flex_width' => true,
         'flex_height' => true,
     )));
 };
 add_action('customize_register', 'smoothrobotics_custom_callout');
+
 // Custom WP Store Locator
 add_filter( 'wpsl_templates', 'custom_templates' );
 
