@@ -11,8 +11,11 @@
 
     <header class="topHeader">
         <nav class="topNav-logo">
+            <a href="<?php echo site_url();?>">
+            
             <img src="<?php echo wp_get_attachment_url(get_theme_mod('smoothrobotics-logo-callout-logo'));?>" alt="">
-        </nav>
+        </a>
+    </nav>
     <nav class="topNav-links">
     <?php wp_nav_menu (
 

@@ -187,19 +187,6 @@ function smoothrobotics_custom_callout($wp_customize) {
         'width' => 140,
         'height' => 130,
     )));
-    // Vi skal også have mulighed for at display vores cases, hvis vi i fremtiden ønsker dette
-    $wp_customize->add_setting('smoothrobotics-checkbox-cases', array(
-        'default' => 0,
-        'transport' => 'refresh',
-    ));
-    $wp_customize->add_control('smoothrobotics-checkbox-cases-control', array(
-        'label' => __('Skal Cases vises på siden?','ephemeris'),
-        'description' => esc_html__('Tryk på checkboxen hvis i vil have vist jeres cases side'),
-        'section' => 'smoothrobotics-callout-section',
-        'type' => 'checkbox',
-        'settings' => 'smoothrobotics-checkbox-cases',
-
-    ));
     // Vi skal også have mulighed for at ændre bannere til news / single
     $wp_customize->add_setting('smoothrobotics-banner-callout-news');
     $wp_customize->add_control(new WP_Customize_Cropped_Image_Control($wp_customize, 'smoothrobotics-banner-callout-news-control', array(

@@ -61,7 +61,7 @@ if ( $wpsl_settings['reset_map'] ) {
 }
 
 $output .= "\t" . '<div id="wpsl-result-list">' . "\r\n";
-$output .= "\t\t" . '<div id="wpsl-stores" '. $autoload_class .'>' . "\r\n";
+$output .= "\t\t" . '<div id="wpsl-stores" class="custom-stores" '. $autoload_class .'>' . "\r\n";
 $output .= "\t\t\t" . '<ul class="customlayout_ul"></ul>' . "\r\n";
 $output .= "\t\t" . '</div>' . "\r\n";
 $output .= "\t\t" . '<div id="wpsl-direction-details">' . "\r\n";

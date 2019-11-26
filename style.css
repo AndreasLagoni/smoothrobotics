@@ -968,6 +968,11 @@ h2.contactinfo {
   margin: 0;
 }
 
+#wpsl-stores.custom-stores {
+  height: 1000px !important;
+  overflow-y: auto;
+}
+
 #wpsl-search-wrap .customdisplay {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -996,10 +1001,28 @@ h2.contactinfo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 20px 0 !important;
 }
 
 .customlayout_ul li {
-  margin-right: 140px;
+  margin-right: 140px !important;
+  margin-bottom: 50px !important;
+  padding-top: 0 !important;
+  padding-left: 45px !important;
+  position: relative !important;
+}
+
+.customlayout_ul li::after {
+  content: "";
+  position: absolute;
+  top: 5px !important;
+  left: 0 !important;
+  width: 20px !important;
+  height: 20px !important;
+  border-radius: 50% !important;
+  background-color: #1b2347 !important;
 }
 
 .customlayout_ul li p {
