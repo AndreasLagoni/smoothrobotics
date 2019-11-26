@@ -28,7 +28,7 @@ style="background-image: url(<?php echo $thumb_url;?>)">
     <h3 class="archive-item-header"><?php the_title();?></h3>
     <?php the_excerpt();?>
     <div class="archive-item-permalink">
-    <a href="<?php the_permalink();?>" class="archive-item-link">Go to news</a></div>
+    <a href="<?php the_permalink();?>" class="archive-item-link">Read more -></a></div>
     </div>
 </article>
 

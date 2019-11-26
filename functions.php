@@ -15,6 +15,8 @@ function load_scripts() {
         }
     }   
 }
+
+add_action('wp_enqueue_scripts', 'load_scripts');
 // Laver custom WP query. Det gør at vi kan lave pagination meget nemmere. 
 function add_custom_pt( $query ) {
     
@@ -46,7 +48,6 @@ function wpdocs_custom_excerpt_length($length) {
 }
 
 add_filter('excerpt_length', 'wpdocs_custom_excerpt_length',999);
-add_action('wp_enqueue_scripts', 'load_scripts');
 // Laver custom post type for news
 function custom_post_type_news() {
     $labels = array(

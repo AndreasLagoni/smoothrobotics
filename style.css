@@ -656,6 +656,9 @@ h2.contactinfo {
 .archive-itemcontent {
   padding: 25px;
   background-color: #f7f7f7;
+  word-break: break-all;
+  overflow: hidden;
+  max-height: 350px;
 }
 
 .archive-itemcontent .archive-item-header {
