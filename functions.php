@@ -23,6 +23,11 @@ function add_custom_pt( $query ) {
       $query->set( 'order', 'DESC' );
       $query->set( 'posts_per_page', 6 );
     }
+    else if ( !is_admin() && $query->is_main_query() && $query->is_post_type_archive('cases')) {
+        $query->set( 'post_type', array( 'Cases' ) );
+        $query->set( 'order', 'DESC' );
+        $query->set( 'posts_per_page', 3 );
+      }
   }
 add_action( 'pre_get_posts', 'add_custom_pt' );
 // 
@@ -125,6 +130,48 @@ function custom_post_type_teammembers() {
     register_post_type('Members',$args);
 }
 add_action('init','custom_post_type_teammembers');
+// Laver custom post type for cases
+function custom_post_type_cases() {
+    $labels = array(
+        'name' => 'Cases',
+        'singular_name' => 'Case',
+        'add_new' => 'Add Case',
+        'all_items' => 'All Cases',
+        'add_new_item' => 'Add Case',
+        'edit_item' => 'Edit Case',
+        'new_item' => 'New Case',
+        'view_items' => 'View Cases',
+        'search_items' => 'Search Cases',
+        'not_found' => 'No Cases found',
+        'not_found_in_trash' => 'No Cases found in trash',
+        'parent_item_colon' => 'Parent Item',
+    );
+    $args = array(
+        'labels' => $labels,
+        'public' => true,
+        'has_archive' => true,
+        'publicly_queryable' => true,
+        'query_var' => true,
+        'rewrite' => true,
+        'capability_type' => 'post',
+        'hierachical' => false,
+        'supports' => array(
+            'title',
+            'editor',
+            'excerpt',
+            'thumbnail',
+            'revisions',
+            'custom-fields',
+        ),
+        'taxonomies' => array(
+            'category', 'post_tag'
+        ),
+        'menu_position' => 5,
+        'exclude_from_search' => false
+    );
+    register_post_type('Cases',$args);
+}
+add_action('init','custom_post_type_cases');
 // Her tilføjer vi mulighed for admins at lave om på contact page. 
 function smoothrobotics_custom_callout($wp_customize) {
     // Først laver vi selve sektionen til admin panelen under customize.
@@ -158,6 +205,15 @@ function smoothrobotics_custom_callout($wp_customize) {
         'label' => 'Banner på single siden',
         'section' => 'smoothrobotics-banner-callout-section',
         'settings' => 'smoothrobotics-banner-callout-single',
+        'flex_width' => true,
+        'flex_height' => true,
+    )));
+    // Vi tilføjer også en til cases
+    $wp_customize->add_setting('smoothrobotics-banner-callout-cases');
+    $wp_customize->add_control(new WP_Customize_Cropped_Image_Control($wp_customize, 'smoothrobotics-banner-callout-cases-control', array(
+        'label' => 'Banner på cases siden',
+        'section' => 'smoothrobotics-banner-callout-section',
+        'settings' => 'smoothrobotics-banner-callout-cases',
         'flex_width' => true,
         'flex_height' => true,
     )));

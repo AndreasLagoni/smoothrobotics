@@ -1,0 +1,34 @@
+// Cases
+.archive-cases {
+  padding-top: 100px;
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100%, 2fr));
+  grid-auto-rows: minmax(400px, auto);
+  grid-gap: 75px;
+}
+.cases-Item {
+  display: flex;
+  justify-content: space-between;
+}
+.cases-banner {
+  width: 49%;
+  height: 100%;
+}
+.cases-content {
+  width: 49%;
+  background: none;
+}
+.cases-content h3.archive-item-header {
+  color: #1b2347;
+  font-size: 50px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+.casebreaker {
+  width: 80%;
+  margin: 0 auto;
+  height: 1px;
+  background-color: #1b2347;
+}
