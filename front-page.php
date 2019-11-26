@@ -146,7 +146,10 @@
 <section class="section-partners-wrapper">
 <h2>Our Partners</h2>
 <article class="partners-wrapper">
-    
+    <img src="<?php echo the_field("partners_partner_image1") ?>" alt="">
+    <img src="<?php echo the_field("partners_partner_image2") ?>" alt="">
+    <img src="<?php echo the_field("partners_partner_image3") ?>" alt="">
+    <img src="<?php echo the_field("partners_partner_image4") ?>" alt="">
 </article>
 </section>
 </main>
