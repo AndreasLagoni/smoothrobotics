@@ -988,7 +988,7 @@ h2.contactinfo {
   top: 0;
   z-index: 100;
   height: 500px;
-  width: 30%;
+  width: 35%;
   margin: 0;
 }
 
@@ -1009,7 +1009,15 @@ h2.contactinfo {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 15px 15px;
+  padding: 20px 10%;
+}
+
+#wpsl-search-wrap .customdisplay .customcanvas-header {
+  margin: 0;
+}
+
+#wpsl-search-wrap .customdisplay .customcanvas-header h2 {
+  font-size: 40px;
 }
 
 #wpsl-search-wrap .customdisplay .wpsl-input {
@@ -1049,7 +1057,7 @@ h2.contactinfo {
 }
 
 .customcanvas {
-  width: 70% !important;
+  width: 65% !important;
 }
 
 .customcanvas-header h2 {

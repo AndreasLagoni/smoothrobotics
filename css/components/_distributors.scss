@@ -25,7 +25,7 @@
   top: 0;
   z-index: 100;
   height: 500px;
-  width: 30%;
+  width: 35%;
   margin: 0;
 }
 #wpsl-stores.custom-stores {
@@ -37,7 +37,13 @@
   align-items: center;
   color: white;
   flex-direction: column;
-  padding: 15px 15px;
+  padding: 20px 10%;
+}
+#wpsl-search-wrap .customdisplay .customcanvas-header {
+  margin: 0;
+}
+#wpsl-search-wrap .customdisplay .customcanvas-header h2 {
+  font-size: 40px;
 }
 #wpsl-search-wrap .customdisplay .wpsl-input {
   display: flex;
@@ -64,7 +70,7 @@
   transition: 0.5s all;
 }
 .customcanvas {
-  width: 70% !important;
+  width: 65% !important;
 }
 .customcanvas-header h2 {
   color: white;

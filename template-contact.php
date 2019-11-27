@@ -16,12 +16,8 @@
         <p>+ 45 27837462</p>
     </div>
     <div class="banner-innercontactsocialitem">
-    <i class="fas fa-mobile-alt"></i>
-        <p>+ 45 27837462</p>
-    </div>
-    <div class="banner-innercontactsocialitem">
-    <i class="fas fa-mobile-alt"></i>
-        <p>+ 45 27837462</p>
+    <i class="fas fa-envelope"></i>
+        <p>Info@smooth-robotics.com</p>
     </div>
 </div>
 </article>
