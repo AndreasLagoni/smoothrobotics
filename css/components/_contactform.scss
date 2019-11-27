@@ -38,19 +38,7 @@
 .std-text-area:active {
   outline: none;
 }
-input[type="submit"] {
-  margin-top: 50px;
-  color: white;
-  max-width: 300px;
-  padding: 20px 60px;
-  font-size: 15px;
-  background-color: #d97e3f;
-  cursor: pointer;
-}
-input[type="submit"]:active,
-input[type="submit"]:focus {
-  outline: none;
-}
+
 input[type="checkbox"] {
   background-color: transparent;
   width: 15px;

@@ -35,25 +35,37 @@
 </section>
 <section class="frontpage-underheader-wrapper">
     <article class="frontpage-underheader-item">
-        <div class="underheader-item-banner"></div>
-        <div class="underheader-item-content">
-        <p><?php echo get_post_meta($post->ID, 'first_section_item_1', true);?></p>
+    <div class="underheader-item-banner" 
+        style="background-image: url('<?php echo the_field("underheader_item_1_banner_image"); ?>')">
+           
         </div>
-        <div class="underheader-item-link"></div>
+        <div class="underheader-item-content">
+        <p>
+            <?php echo get_post_meta($post->ID, 'underheader_item_1_info_content', true);?>
+        </p>
+        </div>
     </article>
     <article class="frontpage-underheader-item">
-    <div class="underheader-item-banner"></div>
-    <div class="underheader-item-content">
-    <p><?php echo get_post_meta($post->ID, 'first_section_item_2', true);?></p>
-    </div>
-    <div class="underheader-item-link"></div>
+    <div class="underheader-item-banner" 
+        style="background-image: url('<?php echo the_field("underheader_item_2_banner_image"); ?>')">
+           
+        </div>
+        <div class="underheader-item-content">
+        <p>
+            <?php echo get_post_meta($post->ID, 'underheader_item_2_info_content', true);?>
+        </p>
+        </div>
     </article>
     <article class="frontpage-underheader-item">
-    <div class="underheader-item-banner"></div>
-    <div class="underheader-item-content">
-    <p><?php echo get_post_meta($post->ID, 'first_section_item_3', true);?></p>
-    </div>
-    <div class="underheader-item-link"></div>
+        <div class="underheader-item-banner" 
+        style="background-image: url('<?php echo the_field("underheader_item_3_banner_image"); ?>')">
+           
+        </div>
+        <div class="underheader-item-content">
+        <p>
+            <?php echo get_post_meta($post->ID, 'underheader_item_3_info_content', true);?>
+        </p>
+        </div>
     </article>
 </section>
 <section class="section-breaker">

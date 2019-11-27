@@ -1,13 +1,20 @@
 .std-button {
   margin-top: 50px;
   color: white;
-  max-width: 300px;
+  max-width: 350px;
   padding: 20px 60px;
   font-size: 20px;
-  background-color: hsl(25, 67%, 55%);
+  background-color: #d97e3f;
   cursor: pointer;
+  transition: 0.3s all;
+  text-decoration: none;
 }
 .std-button:active,
 .std-button:focus {
   outline: none;
+}
+.std-button:hover {
+  background-color: #1b2347;
+  color: white;
+  transition: 0.3s all;
 }

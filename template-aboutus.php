@@ -102,7 +102,7 @@ endif; ?>
         <h2>We would love to hear from you</h2>
         <p>Let us answer your questions. We are here to take 
 the journey with you</p>
-<a href="./contact-us" class="std-link">Contact Smooth Robotics</a>
+<a href="./contact-us" class="std-button">Contact Smooth Robotics</a>
     </section>
 </main>
 </main>

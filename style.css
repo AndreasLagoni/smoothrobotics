@@ -18,16 +18,26 @@ body {
 .std-button {
   margin-top: 50px;
   color: white;
-  max-width: 300px;
+  max-width: 350px;
   padding: 20px 60px;
   font-size: 20px;
-  background-color: #d97f3f;
+  background-color: #d97e3f;
   cursor: pointer;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  text-decoration: none;
 }
 
 .std-button:active,
 .std-button:focus {
   outline: none;
+}
+
+.std-button:hover {
+  background-color: #1b2347;
+  color: white;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
 }
 
 h1,
@@ -283,7 +293,9 @@ h2.contactinfo {
 .videowrapper video {
   opacity: 0.5;
   width: 100%;
-  height: auto;
+  height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
   z-index: -1;
 }
 
@@ -381,12 +393,16 @@ h2.contactinfo {
   width: 100%;
   height: 200px;
   background-color: #1b2347;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .underheader-item-content {
   padding: 25px 25px;
 }
 
+.underheader-item-content p strong,
 .underheader-item-content h3 {
   font-size: 25px;
   font-style: italic;
@@ -395,6 +411,11 @@ h2.contactinfo {
 
 .underheader-item-content p {
   font-size: 25px;
+}
+
+.underheader-item-content a {
+  color: #d97e3f;
+  text-decoration: none;
 }
 
 .section-breaker {
@@ -1197,21 +1218,6 @@ h2.contactinfo {
 }
 
 .std-text-area:active {
-  outline: none;
-}
-
-input[type="submit"] {
-  margin-top: 50px;
-  color: white;
-  max-width: 300px;
-  padding: 20px 60px;
-  font-size: 15px;
-  background-color: #d97e3f;
-  cursor: pointer;
-}
-
-input[type="submit"]:active,
-input[type="submit"]:focus {
   outline: none;
 }
 
