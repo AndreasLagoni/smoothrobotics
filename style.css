@@ -1654,4 +1654,30 @@ input[type="checkbox"] {
   font-size: 15px;
   font-weight: bold;
 }
+
+@media screen and (max-width: 1500px) {
+  .halfdiv {
+    width: 70%;
+  }
+  .startiframe {
+    top: 40%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .topHeader {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+    padding: 0 10%;
+    text-align: right;
+  }
+  .wrapper {
+    padding-top: 110px;
+  }
+  #toggle {
+    display: none;
+  }
+}
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,27 @@
+@media screen and (max-width: 1500px) {
+  .halfdiv {
+    width: 70%;
+  }
+  .startiframe {
+    top: 40%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  //   Først laver vi både nav bar fixed
+  .topHeader {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+    padding: 0 10%;
+    text-align: right;
+  }
+  .wrapper {
+    padding-top: 110px;
+  }
+  .burgermenu {
+  }
+  #toggle {
+    display: none;
+  }
+}

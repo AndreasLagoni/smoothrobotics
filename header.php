@@ -16,6 +16,8 @@
             <img src="<?php echo wp_get_attachment_url(get_theme_mod('smoothrobotics-logo-callout-logo'));?>" alt="">
         </a>
     </nav>
+    <label class="burgermenu" for="toggle">&#9776;</label>
+    <input type="checkbox" id="toggle">
     <nav class="topNav-links">
     <?php wp_nav_menu (
 
