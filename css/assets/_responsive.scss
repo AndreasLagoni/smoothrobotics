@@ -88,3 +88,62 @@
     width: 33%;
   }
 }
+// Tablet
+@media only screen and(max-width: 1000px) {
+  .innerbanner-text {
+    display: none;
+  }
+  .frontbanner-wrapper {
+    height: 70vh;
+  }
+  .innerfrontbanner-wrapper {
+    width: 90%;
+  }
+  .innerbanner-header {
+    width: 100%;
+    margin: 0;
+  }
+  .innerbanner-header h1 {
+    font-size: 55px;
+  }
+  .innerbanner-header h2 {
+    font-size: 35px;
+  }
+  // Underheader
+  .frontpage-underheader-wrapper {
+    top: 20px;
+    flex-direction: column;
+    width: 90%;
+  }
+  .frontpage-underheader-item {
+    width: 100%;
+  }
+  .underheader-item-banner {
+    height: 300px;
+  }
+  // Smoothtool quick info -> Display none
+  .smoothtool-quickinfo-wrapper {
+    display: none;
+  }
+  // Process section
+  .smoothtool-maincontent {
+    padding: 70px 5%;
+  }
+  .smoothtool-process-wrapper {
+    flex-direction: column;
+  }
+  .smoothtool-process-item {
+    width: 100%;
+    padding-bottom: 70px;
+    margin-bottom: 40px;
+  }
+  .arrowright-wrapper {
+    top: auto;
+    bottom: 0;
+    right: auto;
+    left: 0;
+  }
+  .arrowright-wrapper i {
+    transform: rotate(90deg);
+  }
+}

@@ -114,7 +114,7 @@
     <p>
             <?php echo get_post_meta($post->ID, 'third_section_process_third_section_process_item_5', true);?>
         </p>
-    <div class="arrowright-wrapper"><i class="fas fa-long-arrow-alt-right"></i></div></div>
+    <div class="arrowright-wrapper last"><i class="fas fa-long-arrow-alt-right"></i></div></div>
     </article>
 </section>
 <section class="frontpage-info-aboutus">
