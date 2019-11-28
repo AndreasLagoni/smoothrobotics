@@ -1676,8 +1676,47 @@ input[type="checkbox"] {
   .wrapper {
     padding-top: 110px;
   }
+  .main-wrapper {
+    padding-top: 110px;
+  }
+  .distributors-wrapper {
+    padding-top: 210px;
+  }
+  .burgermenu {
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    font-size: 30px;
+  }
+  .topNav-links {
+    display: none;
+  }
   #toggle {
     display: none;
+  }
+  #toggle:checked + .topNav-links {
+    display: block;
+  }
+  .topNav-links {
+    position: absolute;
+    top: 110px;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+  }
+  .topNav-links ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .topNav-links ul li {
+    margin: 0;
+    padding: 20px 0;
+    border-bottom: 1px solid gray;
   }
 }
 /*# sourceMappingURL=style.css.map */

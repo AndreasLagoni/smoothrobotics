@@ -19,9 +19,43 @@
   .wrapper {
     padding-top: 110px;
   }
+  .main-wrapper {
+    padding-top: 110px;
+  }
+  .distributors-wrapper {
+    padding-top: 210px;
+  }
   .burgermenu {
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+  }
+  .topNav-links {
+    display: none;
   }
   #toggle {
     display: none;
+  }
+  #toggle:checked + .topNav-links {
+    display: block;
+  }
+  // Styling af selve menuen efter det er mobil
+  .topNav-links {
+    position: absolute;
+    top: 110px;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+  }
+  .topNav-links ul {
+    flex-direction: column;
+  }
+  .topNav-links ul li {
+    margin: 0;
+    padding: 20px 0;
+    border-bottom: 1px solid gray;
   }
 }
