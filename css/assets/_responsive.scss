@@ -26,6 +26,7 @@
     padding-top: 210px;
   }
   .burgermenu {
+    display: block;
     position: absolute;
     right: 10%;
     top: 50%;
@@ -57,5 +58,33 @@
     margin: 0;
     padding: 20px 0;
     border-bottom: 1px solid gray;
+  }
+  // Mere responsive ting. Frontpage
+  .halfdiv {
+    width: 90%;
+  }
+  .frontpage-underheader-item {
+    width: 31%;
+  }
+  .smoothtool-quickinfo-item.item-header {
+    width: 20%;
+  }
+  .smoothtool-quickinfo-item {
+    width: 34%;
+  }
+  .frontpage-info-aboutus {
+    flex-direction: column;
+  }
+  .info-aboutus-row1 {
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    padding-right: 0;
+  }
+  .info-aboutus-row2 {
+    width: 100%;
+  }
+  .numbers-article-item {
+    width: 33%;
   }
 }
