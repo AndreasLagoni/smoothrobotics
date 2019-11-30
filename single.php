@@ -1,5 +1,5 @@
 <?php get_header();?>
-<section class="banner-bannerwrapper archive-banner" style="
+<section class="banner-bannerwrapper single-banner" style="
 background-image: url(<?php echo wp_get_attachment_url(get_theme_mod('smoothrobotics-banner-callout-single'));?>)
 ">
 <article class="banneroverlay"></article>
