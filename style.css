@@ -688,7 +688,7 @@ h2.contactinfo {
 .archive-itemcontent {
   padding: 25px;
   background-color: #f7f7f7;
-  word-break: break-all;
+  word-break: normal;
   overflow: hidden;
   max-height: 350px;
 }
@@ -831,6 +831,7 @@ h2.contactinfo {
   padding: 5px;
   width: 49%;
   background: none;
+  word-break: normal;
 }
 
 .cases-content h3.archive-item-header {
