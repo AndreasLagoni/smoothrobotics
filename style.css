@@ -315,7 +315,7 @@ h2.contactinfo {
   width: 80%;
   height: 100%;
   margin: 0 auto;
-  padding: 15% 0;
+  padding: 10% 0;
   position: relative;
 }
 
@@ -327,7 +327,7 @@ h2.contactinfo {
   cursor: pointer;
   position: absolute;
   right: 0;
-  top: 50%;
+  top: 40%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
@@ -335,6 +335,15 @@ h2.contactinfo {
 .startiframe i {
   font-size: 120px;
   color: white;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.startiframe:hover > i {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
 }
 
 .innerbanner-header {
@@ -670,6 +679,10 @@ h2.contactinfo {
   text-align: center;
 }
 
+.partners-wrapper img {
+  max-width: 100%;
+}
+
 .archive-itemwrapper {
   padding-top: 100px;
   width: 80%;
@@ -684,6 +697,9 @@ h2.contactinfo {
 
 .archive-itembanner {
   height: 215px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .archive-itemcontent {
@@ -1762,6 +1778,9 @@ input[type="checkbox"] {
   .numbers-article-item {
     width: 33%;
   }
+  .footernav {
+    width: 80%;
+  }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -1824,6 +1843,27 @@ input[type="checkbox"] {
   .arrowright-wrapper i {
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
+  }
+  .frontpage-info-aboutus {
+    width: 90%;
+  }
+  .section-numbers {
+    width: 90%;
+  }
+  .section-partners-wrapper {
+    width: 90%;
+  }
+  .banner-innerwrapper {
+    width: 90%;
+  }
+  .archive-itemwrapper {
+    width: 90%;
+  }
+  .archive-navigate-nextpage {
+    width: 90%;
+  }
+  .footerwrapper-content {
+    width: 90%;
   }
 }
 /*# sourceMappingURL=style.css.map */

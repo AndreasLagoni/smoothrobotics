@@ -87,9 +87,14 @@
   .numbers-article-item {
     width: 33%;
   }
+  // Footer
+  .footernav {
+    width: 80%;
+  }
 }
 // Tablet
 @media only screen and(max-width: 1000px) {
+  // DET ER VIGTIGT AT VI ÆNDRER WIDTH TIL 90%
   .innerbanner-text {
     display: none;
   }
@@ -145,5 +150,31 @@
   }
   .arrowright-wrapper i {
     transform: rotate(90deg);
+  }
+  // Section info about  us
+  .frontpage-info-aboutus {
+    width: 90%;
+  }
+  // Section numbers
+  .section-numbers {
+    width: 90%;
+  }
+  // Partners
+  .section-partners-wrapper {
+    width: 90%;
+  }
+  // Bannere
+  .banner-innerwrapper {
+    width: 90%;
+  }
+  .archive-itemwrapper {
+    width: 90%;
+  }
+  //
+  .archive-navigate-nextpage {
+    width: 90%;
+  }
+  .footerwrapper-content {
+    width: 90%;
   }
 }
