@@ -85,7 +85,8 @@
     </article>
 </section>
 <section class="smoothtool-maincontent">
-    <article class="smoothtool-maincontent-banner">
+    <article class="smoothtool-maincontent-banner" 
+    style="background-image: url('<?php echo the_field('third_section_dot_image')?>')">
         <div class="maincontent-banner-header"><h2><?php echo get_post_meta($post->ID, 'third_section_title', true);?></h2></div>
     </article>
     <article class="smoothtool-process-wrapper">
