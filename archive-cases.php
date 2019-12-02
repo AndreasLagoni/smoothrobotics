@@ -1,6 +1,6 @@
 <?php get_header();?>
 <main class="main-wrapper">
-<section class="banner-bannerwrapper archive-banner" 
+<section class="banner-bannerwrapper archive-cases-banner" 
 style="background-image: url(
 <?php echo wp_get_attachment_url(get_theme_mod('smoothrobotics-banner-callout-cases'));?>
 )">
@@ -25,7 +25,10 @@ style="background-image: url(<?php echo $thumb_url;?>)">
 </div>
 <div class="archive-itemcontent cases-content">
     <h3 class="archive-item-header"><?php the_title();?></h3>
-    <?php the_content();?>
+    <?php the_excerpt();?>
+    <div class="archive-item-permalink">
+    <a href="<?php the_permalink();?>" class="archive-item-link">Read more -></a></div>
+    
     </div>
 </article>
 

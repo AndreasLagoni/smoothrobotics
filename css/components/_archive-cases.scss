@@ -6,8 +6,8 @@
   margin-bottom: 150px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(100%, 2fr));
-  grid-auto-rows: minmax(400px, auto);
-  grid-gap: 150px;
+  grid-template-rows: repeat(auto-fill, minmax(400px, auto));
+  grid-gap: 100px;
 }
 .cases-Item {
   display: flex;
@@ -17,12 +17,18 @@
 .cases-banner {
   width: 49%;
   height: 400px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .cases-content {
   padding: 5px;
   width: 49%;
   background: none;
   word-break: normal;
+  overflow: visible;
+  height: 100%;
+  max-height: 100%;
 }
 .cases-content h3.archive-item-header {
   color: #1b2347;
