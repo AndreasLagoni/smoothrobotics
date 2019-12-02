@@ -48,7 +48,7 @@
   .topNav-links ul li {
     margin: 0;
     padding: 10px 0;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.431);
   }
 
   .topNav-links ul li a {
@@ -85,6 +85,29 @@
   // Footer
   .footernav {
     width: 80%;
+  }
+}
+// Not tablet / web and not mobile
+// Kinda in between stuff
+// Mostly will make it all the way down to mobile
+@media only screen and(max-width: 800px) {
+  .contact-wrapper {
+    padding: 50px 0;
+  }
+  .contact-info {
+    display: none;
+  }
+  .contact-form {
+    width: 100%;
+  }
+  .newsbanner-h1 {
+    font-size: 35px;
+  }
+  .banner-innercontact {
+    flex-direction: column;
+  }
+  .banner-innercontact div {
+    margin: 5px 0;
   }
 }
 // Tablet og mindre web
@@ -244,6 +267,10 @@
   .contact-wrapper {
     width: 90%;
   }
+  h2.contactinfo {
+    width: 75%;
+    font-size: 35px;
+  }
   // About us
   .aboutuswrapper {
     width: 90%;
@@ -251,6 +278,10 @@
 }
 // Mobile
 @media only screen and (max-width: 600px) {
+  // Nav
+  .topNav-links ul li {
+    padding: 5px 0;
+  }
   // Archive-news
   .banner-bannerwrapper {
     height: 250px;
@@ -277,5 +308,58 @@
   }
   .archive-itembanner {
     height: 150px;
+  }
+  // Distributors
+  .custombg {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  .customcanvas-header h2 {
+    display: block !important;
+  }
+  .customcanvas {
+    width: 100% !important;
+  }
+  #wpsl-search-wrap .customdisplay .wpsl-select-wrap {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .customlayout_ul {
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr)) !important;
+  }
+  // Contact
+  .contact-banner .newsbanner-p {
+    font-size: 16px;
+  }
+  .contact-banner .banner-innercontact {
+    margin: 0;
+  }
+  .contact-banner .banner-innercontact div i,
+  .contact-banner .banner-innercontact div p {
+    font-size: 16px;
+  }
+  // Footer
+  .footerwrapper-content {
+    width: 100%;
+  }
+  .socials {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .socials a {
+    margin: 0 5px !important;
+  }
+}
+// Smaller stuff
+@media screen and (max-width: 400px) {
+  .contact-banner .newsbanner-p {
+    display: none;
+  }
+  .std-button {
+    padding: 15px 40px;
+    font-size: 16px;
   }
 }

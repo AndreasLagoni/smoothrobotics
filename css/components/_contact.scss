@@ -31,8 +31,19 @@
 .contact-form {
   width: 50%;
 }
-.contactinfo {
+h2.contactinfo {
+  padding-top: 15px;
   width: 80%;
+  position: relative;
+}
+h2.contactinfo::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25%;
+  height: 5px;
+  background-color: #d97e3f;
 }
 // Contactform
 @import "../components/contactform";
