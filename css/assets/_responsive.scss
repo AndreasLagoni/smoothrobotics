@@ -139,9 +139,7 @@
   .ourstorywrapper::after {
     left: -5vw;
   }
-  .banner-innerwrapper {
-    width: 90%;
-  }
+
   // Footer
   .footernav {
     width: 80%;
@@ -164,6 +162,9 @@
   }
   .burgermenu {
     right: 5%;
+  }
+  .banner-innerwrapper {
+    width: 90%;
   }
   // Frontpage
   .innerbanner-text {
@@ -313,6 +314,26 @@
   .aboutuswrapper {
     width: 90%;
   }
+  // Single news
+  .single-banner {
+    height: 250px;
+  }
+  .singlepage-wrapper {
+    width: 90%;
+    flex-direction: column;
+    padding-top: 40px;
+  }
+  .singlepage-maincontent {
+    border-right: 0px;
+    padding: 0;
+  }
+  .singlepage-maincontent h1 {
+    word-break: break-all;
+  }
+  .aside-subscribenews {
+    width: 90%;
+    margin-top: 50px;
+  }
 }
 // Not tablet / web and not mobile
 // Kinda in between stuff
@@ -421,6 +442,10 @@
   }
   .sendtocontact .std-button {
     margin-top: 0;
+  }
+  // Single
+  .singlepage-maincontent h1 {
+    font-size: 30px;
   }
   // Footer
   .footerwrapper-content {

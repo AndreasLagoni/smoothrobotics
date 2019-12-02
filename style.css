@@ -233,6 +233,10 @@ h2.contactinfo {
   width: 70%;
 }
 
+.single-banner {
+  top: 110px;
+}
+
 .wrapper {
   padding-top: 110px;
 }
@@ -885,12 +889,15 @@ h2.contactinfo {
 }
 
 .singlepage-wrapper {
+  position: relative;
   width: 80%;
+  top: 110px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 100px 0;
+  padding-top: 100px;
+  padding-bottom: 200px;
 }
 
 .singlepage-maincontent {
@@ -1864,9 +1871,6 @@ input[type="checkbox"] {
   .ourstorywrapper::after {
     left: -5vw;
   }
-  .banner-innerwrapper {
-    width: 90%;
-  }
   .footernav {
     width: 80%;
   }
@@ -1884,6 +1888,9 @@ input[type="checkbox"] {
   }
   .burgermenu {
     right: 5%;
+  }
+  .banner-innerwrapper {
+    width: 90%;
   }
   .innerbanner-text {
     display: none;
@@ -2045,6 +2052,28 @@ input[type="checkbox"] {
   .aboutuswrapper {
     width: 90%;
   }
+  .single-banner {
+    height: 250px;
+  }
+  .singlepage-wrapper {
+    width: 90%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 40px;
+  }
+  .singlepage-maincontent {
+    border-right: 0px;
+    padding: 0;
+  }
+  .singlepage-maincontent h1 {
+    word-break: break-all;
+  }
+  .aside-subscribenews {
+    width: 90%;
+    margin-top: 50px;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -2156,6 +2185,9 @@ input[type="checkbox"] {
   }
   .sendtocontact .std-button {
     margin-top: 0;
+  }
+  .singlepage-maincontent h1 {
+    font-size: 30px;
   }
   .footerwrapper-content {
     width: 100%;
