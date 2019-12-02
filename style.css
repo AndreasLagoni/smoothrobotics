@@ -1745,8 +1745,11 @@ input[type="checkbox"] {
   }
   .topNav-links ul li {
     margin: 0;
-    padding: 20px 0;
+    padding: 10px 0;
     border-bottom: 1px solid gray;
+  }
+  .topNav-links ul li a {
+    font-size: 20px;
   }
   .halfdiv {
     width: 90%;

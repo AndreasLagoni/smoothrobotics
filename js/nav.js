@@ -1,5 +1,9 @@
 window.onscroll = function() {
-  scrollFunction();
+  let mobileMenu = window.matchMedia("(max-width: 1200px)");
+  if (mobileMenu.matches) {
+  } else {
+    scrollFunction();
+  }
 };
 
 function scrollFunction() {
