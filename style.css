@@ -692,6 +692,10 @@ h2.contactinfo {
   max-width: 100%;
 }
 
+.main-wrapper {
+  padding-top: 110px;
+}
+
 .archive-itemwrapper {
   padding-top: 100px;
   width: 80%;
@@ -1003,6 +1007,7 @@ h2.contactinfo {
   width: 80%;
   margin: 0 auto;
   padding: 100px 0;
+  padding-top: 210px;
 }
 
 .content_distributors h2 {
@@ -1705,12 +1710,6 @@ input[type="checkbox"] {
 @media only screen and (max-width: 1200px) {
   .topHeader {
     text-align: right;
-  }
-  .main-wrapper {
-    padding-top: 110px;
-  }
-  .distributors-wrapper {
-    padding-top: 210px;
   }
   .burgermenu {
     display: block;
