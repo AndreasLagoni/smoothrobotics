@@ -1899,7 +1899,67 @@ input[type="checkbox"] {
     width: 90%;
   }
   .distributors-wrapper {
-    width: 90%;
+    width: 100%;
+    padding-top: 110px;
+  }
+  .content_distributors h2:first-of-type,
+  .content_distributors h3 {
+    display: none;
+  }
+  #wpsl-search-wrap {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #wpsl-search-wrap .customdisplay {
+    padding: 0;
+  }
+  #wpsl-search-wrap .customdisplay div {
+    margin: 10px 0;
+    padding: 0;
+  }
+  #wpsl-search-wrap .customdisplay .wpsl-select-wrap #wpsl-radius,
+  #wpsl-search-wrap .customdisplay .wpsl-select-wrap #wpsl-results {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: centeR;
+        -ms-flex-align: centeR;
+            align-items: centeR;
+  }
+  #wpsl-search-wrap .customdisplay .wpsl-select-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  #wpsl-stores.custom-stores {
+    max-height: 1000px !important;
+  }
+  .customlayout_ul {
+    padding: 20px 5% !important;
+    -ms-grid-columns: (minmax(200px, 1fr))[auto-fill] !important;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)) !important;
+    grid-auto-rows: minmax(auto, auto) !important;
+    grid-gap: 0px !important;
+  }
+  .wpsl-store-location {
+    font-size: 13px !important;
   }
   .contact-wrapper {
     width: 90%;
@@ -1919,6 +1979,11 @@ input[type="checkbox"] {
   .banner-innerwrapper .newsbanner-p {
     width: 100%;
     font-size: 20px;
+  }
+  .archive-itemwrapper.archive-news {
+    -ms-grid-columns: (minmax(100%, 2fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(100%, 2fr));
+    grid-gap: 45px;
   }
   .archive-item-header {
     font-size: 16px;
