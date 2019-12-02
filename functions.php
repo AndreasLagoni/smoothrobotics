@@ -3,7 +3,7 @@
 
 function load_scripts() {
     wp_enqueue_style("stylesheet", get_template_directory_uri() . '/style.css', array(), filemtime(get_template_directory() . '/style.css'), 'all');
-      
+    wp_enqueue_script( 'script', get_template_directory_uri() . '/js/nav.js', array ( 'jquery' ), 1.1, true);
     global $post;
     if( is_page() || is_single() )
     {

@@ -9,10 +9,8 @@
         ?>
     </div>
 </section>
-<section class="frontbanner-wrapper" style="background-image: url('  
- <?php 
-//  the_field('background_image');  ?>
-')">
+<section class="frontbanner-wrapper">  
+
 <div class="videowrapper filterblue">
 <video autoplay loop muted >
 <source src="/wordpress/wp-content/themes/smoothrobotics/assets/intro.mp4" type="video/mp4">

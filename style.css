@@ -97,6 +97,8 @@ h2.contactinfo {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
 }
 
 .burgermenu {
@@ -116,6 +118,8 @@ h2.contactinfo {
 
 .topNav-logo {
   height: 110px;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
 }
 
 .topNav-logo img {
@@ -131,6 +135,8 @@ h2.contactinfo {
   padding: 1px 0;
   text-decoration: none;
   position: relative;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
 }
 
 .topNav-links ul li a::after {

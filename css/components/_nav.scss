@@ -8,6 +8,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: 0.3s all;
 }
 .burgermenu {
   display: none;
@@ -21,6 +22,7 @@
 }
 .topNav-logo {
   height: 110px;
+  transition: 0.3s all;
 }
 .topNav-logo img {
   height: 100%;
@@ -33,6 +35,7 @@
   padding: 1px 0;
   text-decoration: none;
   position: relative;
+  transition: 0.3s all;
 }
 .topNav-links ul li a::after {
   content: "";
