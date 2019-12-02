@@ -180,6 +180,18 @@ function smoothrobotics_custom_callout($wp_customize) {
     $wp_customize -> add_section('smoothrobotics-callout-section', array(
         'title' => 'Smoothrobotics Panel'
     ));
+    // Youtube i frame
+    $wp_customize->add_setting('smoothrobotics-youtube-callout-youtube', array(
+        'default' => '<iframe width="1131" height="636" src="https://www.youtube.com/embed/X549JSjCmC4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+        'transport' => 'refresh',
+        ));
+    $wp_customize->add_control('smoothrobotics-youtube-callout-control', array(
+        'label' => 'Iframe til youtube video',
+        'section' => 'smoothrobotics-callout-section',
+        'settings' => 'smoothrobotics-youtube-callout-youtube',
+        'type' => 'textarea',
+    ));
+    // Logo
     $wp_customize->add_setting('smoothrobotics-logo-callout-logo');
     $wp_customize->add_control(new WP_Customize_Cropped_Image_Control($wp_customize, 'smoothrobotics-logo-callout-logo-control', array(
         'label' => 'Logo på siden',

@@ -36,12 +36,9 @@
   padding-right: 20px;
   padding-bottom: 50px;
 }
-.modaliframe {
+.modalcontent-wrapper iframe {
   width: 100%;
   height: 100%;
-}
-.modaliframe.stop {
-  display: none;
 }
 .closemodal {
   position: absolute;

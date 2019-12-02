@@ -3,11 +3,10 @@
 <section class="modalvideo-wrapper">
     <div class="modalcontent-wrapper">
         <h2 class="closemodal">X</h2>
-        <iframe  class="modaliframe"
-        src="https://www.youtube.com/embed/X549JSjCmC4" 
-        frameborder="0"
-        allowfullscreen>
-        </iframe>
+        
+        <?php 
+        echo get_theme_mod('smoothrobotics-youtube-callout-youtube');
+        ?>
     </div>
 </section>
 <section class="frontbanner-wrapper" style="background-image: url('  
