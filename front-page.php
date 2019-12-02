@@ -4,7 +4,7 @@
     <div class="modalcontent-wrapper">
         <h2 class="closemodal">X</h2>
         <iframe  class="modaliframe"
-        src="https://youtube.com/embed/BhGFvzpKLWk" 
+        src="https://www.youtube.com/embed/X549JSjCmC4" 
         frameborder="0"
         allowfullscreen>
         </iframe>
@@ -16,7 +16,7 @@
 ')">
 <div class="videowrapper filterblue">
 <video autoplay loop muted >
-<source src="/wordpresstest/wp-content/themes/smoothrobotics/assets/intro.mp4" type="video/mp4">
+<source src="/wordpress/wp-content/themes/smoothrobotics/assets/intro.mp4" type="video/mp4">
 </video>
 </div>
 <div class="innerfrontbanner-wrapper">
