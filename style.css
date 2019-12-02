@@ -109,6 +109,12 @@ h2.contactinfo {
   display: none;
 }
 
+.topNav-links {
+  max-height: 80vh;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
 .topNav-links ul {
   list-style: none;
   display: -webkit-box;
@@ -1704,6 +1710,12 @@ input[type="checkbox"] {
   }
   .startiframe {
     top: 40%;
+  }
+  .topNav-links ul li {
+    margin-left: 40px;
+  }
+  .topNav-links ul li a {
+    font-size: 22px;
   }
 }
 

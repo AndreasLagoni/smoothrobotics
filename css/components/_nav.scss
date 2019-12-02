@@ -16,6 +16,10 @@
 #toggle {
   display: none;
 }
+.topNav-links {
+  max-height: 80vh;
+  transition: 0.3s all;
+}
 .topNav-links ul {
   list-style: none;
   display: flex;
