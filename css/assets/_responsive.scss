@@ -11,6 +11,12 @@
   .topNav-links ul li a {
     font-size: 22px;
   }
+  .intro-image {
+    height: 500px;
+  }
+  .quoteimage img {
+    max-width: 100%;
+  }
 }
 @media only screen and (max-width: 1200px) {
   .topHeader {
@@ -82,34 +88,66 @@
   .numbers-article-item {
     width: 33%;
   }
+  // About us
+  .aboutuswrapper {
+    width: 90%;
+  }
+  .aboutus-h1 {
+    font-size: 50px;
+    width: 100%;
+  }
+  .aboutus-intro-wrapper {
+    padding: 50px 0;
+  }
+  .aboutus-intro-wrapper .intro-content {
+    width: 100%;
+  }
+  .intro-content::after {
+    width: 15%;
+  }
+  .intro-image {
+    display: none;
+  }
+  .ourstorywrapper {
+    top: -10px;
+    flex-direction: column;
+  }
+  .quote h2 {
+    width: 100%;
+  }
+  .ourstory-maininfo::after {
+    display: none;
+  }
+  .ourstory-maininfo {
+    width: 100%;
+    padding-right: 0;
+  }
+  .ourstory-subinfo {
+    width: 100%;
+    padding: 0;
+  }
+  .teammembers-wrapper::after {
+    display: none;
+  }
+  .teammembers-header {
+    top: 20px;
+  }
+  .sendtocontact {
+    text-align: center;
+  }
+  .sendtocontact::after,
+  .ourstorywrapper::after {
+    left: -5vw;
+  }
+  .banner-innerwrapper {
+    width: 90%;
+  }
   // Footer
   .footernav {
     width: 80%;
   }
 }
-// Not tablet / web and not mobile
-// Kinda in between stuff
-// Mostly will make it all the way down to mobile
-@media only screen and(max-width: 800px) {
-  .contact-wrapper {
-    padding: 50px 0;
-  }
-  .contact-info {
-    display: none;
-  }
-  .contact-form {
-    width: 100%;
-  }
-  .newsbanner-h1 {
-    font-size: 35px;
-  }
-  .banner-innercontact {
-    flex-direction: column;
-  }
-  .banner-innercontact div {
-    margin: 5px 0;
-  }
-}
+
 // Tablet og mindre web
 @media only screen and(max-width: 1000px) {
   // Footer
@@ -274,6 +312,29 @@
   // About us
   .aboutuswrapper {
     width: 90%;
+  }
+}
+// Not tablet / web and not mobile
+// Kinda in between stuff
+// Mostly will make it all the way down to mobile
+@media only screen and(max-width: 800px) {
+  .contact-wrapper {
+    padding: 50px 0;
+  }
+  .contact-info {
+    display: none;
+  }
+  .contact-form {
+    width: 100%;
+  }
+  .newsbanner-h1 {
+    font-size: 35px;
+  }
+  .banner-innercontact {
+    flex-direction: column;
+  }
+  .banner-innercontact div {
+    margin: 5px 0;
   }
 }
 // Mobile
