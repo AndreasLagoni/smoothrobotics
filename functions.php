@@ -197,6 +197,8 @@ function smoothrobotics_custom_callout($wp_customize) {
         'label' => 'Logo på siden',
         'section' => 'smoothrobotics-callout-section',
         'settings' => 'smoothrobotics-logo-callout-logo',
+        'flex_width' => true,
+        'flex_height' => true,
         'width' => 140,
         'height' => 130,
     )));

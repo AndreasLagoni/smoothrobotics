@@ -123,13 +123,14 @@ h2.contactinfo {
 }
 
 .topNav-logo {
+  padding-top: 8px;
   height: 110px;
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
 }
 
 .topNav-logo img {
-  height: 100%;
+  height: 90%;
   max-width: 100%;
 }
 
@@ -321,7 +322,7 @@ h2.contactinfo {
 }
 
 .videowrapper video {
-  opacity: 0.5;
+  opacity: 0.4;
   width: 100%;
   height: 100%;
   -o-object-fit: fill;
