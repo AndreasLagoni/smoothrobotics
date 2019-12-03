@@ -1707,7 +1707,7 @@ input[type="checkbox"] {
 }
 
 .footernav {
-  width: 50%;
+  width: 40%;
   padding: 20px 0px;
 }
 
@@ -1759,6 +1759,9 @@ input[type="checkbox"] {
   }
   .quoteimage img {
     max-width: 100%;
+  }
+  .footernav {
+    width: 50%;
   }
 }
 
