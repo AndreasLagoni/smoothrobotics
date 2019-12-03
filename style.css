@@ -715,8 +715,12 @@ h2.contactinfo {
   display: grid;
   -ms-grid-columns: (minmax(450px, 2fr))[auto-fill];
       grid-template-columns: repeat(auto-fill, minmax(450px, 2fr));
-  grid-auto-rows: minmax(350px, auto);
+  grid-auto-rows: minmax(450px, auto);
   grid-gap: 75px;
+}
+
+.archive-Item.news-Item {
+  background-color: #f7f7f7;
 }
 
 .archive-itembanner {
@@ -728,7 +732,6 @@ h2.contactinfo {
 
 .archive-itemcontent {
   padding: 25px;
-  background-color: #f7f7f7;
   word-break: normal;
   overflow: hidden;
   max-height: 350px;
@@ -1022,6 +1025,10 @@ h2.contactinfo {
   background: transparent;
   border: 1px solid #1b2347;
   margin: 10px 0;
+}
+
+.aside-subscribenews input.checkboxaccept {
+  margin-right: 10px;
 }
 
 .distributors-wrapper {
@@ -1558,6 +1565,10 @@ input[type="checkbox"] {
   grid-gap: 35px;
 }
 
+.teammembers-archive-item {
+  background-color: #d6d6d6;
+}
+
 .teammembers-itembanner {
   height: 300px;
   background-position: center;
@@ -1574,7 +1585,6 @@ input[type="checkbox"] {
 
 .teammembers-itemcontent {
   padding: 14px 0;
-  background-color: #d6d6d6;
   text-align: center;
   border-radius: 0 0 5px 5px;
 }
