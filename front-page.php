@@ -13,7 +13,7 @@
 
 <div class="videowrapper filterblue">
 <video autoplay loop muted >
-<source src="/wordpresstest/wp-content/themes/smoothrobotics/assets/intro.mp4" type="video/mp4">
+<source src="/wordpress/wp-content/themes/smoothrobotics/assets/intro.mp4" type="video/mp4">
 </video>
 </div>
 <div class="innerfrontbanner-wrapper">
@@ -25,8 +25,12 @@
     <p><?php echo get_post_meta($post->ID, 'header_column_1', true);?></p>
 <p><?php echo get_post_meta($post->ID, 'header_column_2', true);?></p>
     </div>
+    <div class="cta-inner">
+    <a href="<?php echo site_url().'/contact-us';?>" class="std-button">Get in Contact</a>
+    </div>
     <div class="startiframe">
         <i class="fas fa-play-circle"></i>
+        <p>Company Presentation</p>
     </div>
 </div>
 </section>

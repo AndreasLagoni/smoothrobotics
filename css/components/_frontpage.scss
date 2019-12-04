@@ -79,11 +79,14 @@
   width: 80%;
   height: 100%;
   margin: 0 auto;
-  padding: 10% 0;
+  padding: 8% 0;
   position: relative;
 }
 .halfdiv {
   width: 50%;
+}
+.cta-inner {
+  margin: 50px 0;
 }
 .startiframe {
   cursor: pointer;
@@ -91,11 +94,17 @@
   right: 15%;
   top: 40%;
   transform: translateY(-50%);
+  text-align: center;
+  color: white;
 }
 .startiframe i {
   font-size: 120px;
   color: white;
   transition: 0.5s all;
+}
+.startiframe p {
+  margin-top: 15px;
+  font-size: 20px;
 }
 .startiframe:hover > i {
   transform: scale(1.2);

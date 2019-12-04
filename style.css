@@ -335,12 +335,16 @@ h2.contactinfo {
   width: 80%;
   height: 100%;
   margin: 0 auto;
-  padding: 10% 0;
+  padding: 8% 0;
   position: relative;
 }
 
 .halfdiv {
   width: 50%;
+}
+
+.cta-inner {
+  margin: 50px 0;
 }
 
 .startiframe {
@@ -350,6 +354,8 @@ h2.contactinfo {
   top: 40%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  text-align: center;
+  color: white;
 }
 
 .startiframe i {
@@ -357,6 +363,11 @@ h2.contactinfo {
   color: white;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
+}
+
+.startiframe p {
+  margin-top: 15px;
+  font-size: 20px;
 }
 
 .startiframe:hover > i {
@@ -1747,6 +1758,7 @@ input[type="checkbox"] {
   }
   .startiframe {
     top: 40%;
+    right: 5%;
   }
   .topNav-links ul li {
     margin-left: 40px;
@@ -1810,7 +1822,22 @@ input[type="checkbox"] {
     font-size: 20px;
   }
   .halfdiv {
-    width: 90%;
+    width: 80%;
+  }
+  .frontbanner-wrapper {
+    height: 70vh;
+  }
+  .halfdiv p {
+    font-size: 22px;
+  }
+  .startiframe {
+    right: 0%;
+  }
+  .startiframe p {
+    font-size: 14px;
+  }
+  .startiframe i {
+    font-size: 60px;
   }
   .frontpage-underheader-item {
     width: 31%;
@@ -1926,11 +1953,11 @@ input[type="checkbox"] {
   .banner-innerwrapper {
     width: 90%;
   }
+  .frontbanner-wrapper {
+    height: 40vh;
+  }
   .innerbanner-text {
     display: none;
-  }
-  .frontbanner-wrapper {
-    height: 70vh;
   }
   .innerfrontbanner-wrapper {
     width: 90%;
@@ -1940,10 +1967,17 @@ input[type="checkbox"] {
     margin: 0;
   }
   .innerbanner-header h1 {
-    font-size: 55px;
+    font-size: 45px;
   }
   .innerbanner-header h2 {
-    font-size: 35px;
+    font-size: 25px;
+  }
+  .std-button {
+    font-size: 18px;
+    padding: 15px 50px;
+  }
+  .startiframe {
+    top: 30%;
   }
   .frontpage-underheader-wrapper {
     top: 20px;
