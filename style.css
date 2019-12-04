@@ -290,27 +290,35 @@ h2.contactinfo {
 .std-animafter::after {
   -webkit-animation-name: std-afteranim;
           animation-name: std-afteranim;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 
 @-webkit-keyframes std-afteranim {
   0% {
+    opacity: 0;
     width: 0;
   }
+  20% {
+    opacity: 1;
+  }
   100% {
-    width: 30%;
+    width: 150px;
   }
 }
 
 @keyframes std-afteranim {
   0% {
+    opacity: 0;
     width: 0;
   }
+  20% {
+    opacity: 1;
+  }
   100% {
-    width: 30%;
+    width: 150px;
   }
 }
 
@@ -464,7 +472,7 @@ h2.contactinfo {
   position: absolute;
   top: 0;
   left: 0;
-  width: 30%;
+  width: 0%;
   height: 3px;
   background-color: #d97e3f;
 }
@@ -590,7 +598,7 @@ h2.contactinfo {
   position: absolute;
   top: 0;
   left: 0;
-  width: 30%;
+  width: 0%;
   height: 3px;
   background-color: #d97e3f;
 }
@@ -624,7 +632,7 @@ h2.contactinfo {
   position: absolute;
   top: 0;
   left: 0;
-  width: 25%;
+  width: 0%;
   height: 3px;
   background-color: #d97e3f;
 }
@@ -688,7 +696,7 @@ h2.contactinfo {
   position: absolute;
   top: 0;
   left: 0;
-  width: 35%;
+  width: 0%;
   height: 3px;
   background-color: #d97e3f;
 }
@@ -774,7 +782,7 @@ h2.contactinfo {
   position: absolute;
   top: 0;
   left: 0;
-  width: 15%;
+  width: 0%;
   height: 3px;
   background-color: #d97e3f;
 }

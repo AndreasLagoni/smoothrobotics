@@ -24,14 +24,18 @@
 }
 .std-animafter::after {
   animation-name: std-afteranim;
-  animation-duration: 1s;
+  animation-duration: 1.5s;
   animation-fill-mode: forwards;
 }
 @keyframes std-afteranim {
   0% {
+    opacity: 0;
     width: 0;
   }
+  20% {
+    opacity: 1;
+  }
   100% {
-    width: 30%;
+    width: 150px;
   }
 }

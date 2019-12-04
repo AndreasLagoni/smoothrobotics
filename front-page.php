@@ -120,7 +120,7 @@
     </article>
 </section>
 <section class="frontpage-info-aboutus">
-<article class="info-aboutus-row1">
+<article class="info-aboutus-row1 ">
 <h2><?php echo get_post_meta($post->ID, 'fourth_section_section_header', true);?></h2>
 </article>
 <article class="info-aboutus-row2">
