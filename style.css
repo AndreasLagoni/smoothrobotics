@@ -238,6 +238,82 @@ h2.contactinfo {
   top: 110px;
 }
 
+.std-anim-flyup {
+  -webkit-animation-name: std-flyup;
+          animation-name: std-flyup;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.std-anim-flyup.anim-dur05 {
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+}
+
+.std-anim-flyup.anim-dur1 {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+.std-anim-flyup.anim-delay03 {
+  opacity: 0;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+@-webkit-keyframes std-flyup {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes std-flyup {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+.std-animafter::after {
+  -webkit-animation-name: std-afteranim;
+          animation-name: std-afteranim;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes std-afteranim {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 30%;
+  }
+}
+
+@keyframes std-afteranim {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 30%;
+  }
+}
+
 .wrapper {
   padding-top: 110px;
 }
@@ -399,7 +475,7 @@ h2.contactinfo {
 
 .innerbanner-header h2 {
   color: white;
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .innerbanner-text {

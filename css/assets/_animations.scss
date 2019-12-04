@@ -1,0 +1,37 @@
+.std-anim-flyup {
+  animation-name: std-flyup;
+  animation-fill-mode: forwards;
+}
+.std-anim-flyup.anim-dur05 {
+  animation-duration: 0.5s;
+}
+.std-anim-flyup.anim-dur1 {
+  animation-duration: 1s;
+}
+.std-anim-flyup.anim-delay03 {
+  opacity: 0;
+  animation-delay: 0.3s;
+}
+@keyframes std-flyup {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.std-animafter::after {
+  animation-name: std-afteranim;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes std-afteranim {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 30%;
+  }
+}
