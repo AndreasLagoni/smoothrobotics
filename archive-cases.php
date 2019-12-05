@@ -6,8 +6,12 @@ style="background-image: url(
 )">
 <article class="banneroverlay"></article>
 <article class="banner-innerwrapper">
-<h1 class="newsbanner-h1">Our Cases</h1>
-<p class="newsbanner-p">Look at our latest cases, where we help good companies, to become even better.</p>
+<h1 class="newsbanner-h1">
+<?php echo get_theme_mod('smoothrobotics-cases-callout-headline', 'Our Cases');?>
+</h1>
+<p class="newsbanner-p">
+<?php echo get_theme_mod('smoothrobotics-cases-callout-paragraph', 'Look at our latest cases, where we help good companies, to become even better.');?>
+</p>
 </article>
 </section>
 <section class="archive-itemwrapper archive-cases">

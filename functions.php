@@ -214,6 +214,28 @@ function smoothrobotics_custom_callout($wp_customize) {
         'flex_width' => true,
         'flex_height' => true,
     )));
+    // Samtidig med det så skal der kunne ændres på news siden.
+    $wp_customize->add_setting('smoothrobotics-news-callout-headline', array(
+        'default' => 'Company News.',
+        'transport' => 'refresh',
+        ));
+    $wp_customize->add_control('smoothrobotics-news-callout-headline-control', array(
+        'label' => 'Headline til News',
+        'section' => 'smoothrobotics-callout-section',
+        'settings' => 'smoothrobotics-news-callout-headline',
+        'type' => 'text',
+    ));
+    $wp_customize->add_setting('smoothrobotics-news-callout-paragraph', array(
+        'default' => 'Find out about our latest developments, collaborations and 
+        events in the international robot industry.',
+        'transport' => 'refresh',
+        ));
+    $wp_customize->add_control('smoothrobotics-news-callout-paragraph-control', array(
+        'label' => 'SubHeadline til News',
+        'section' => 'smoothrobotics-callout-section',
+        'settings' => 'smoothrobotics-news-callout-paragraph',
+        'type' => 'textarea',
+    ));
     // Vi tilføjer også en til single
     $wp_customize->add_setting('smoothrobotics-banner-callout-single');
     $wp_customize->add_control(new WP_Customize_Cropped_Image_Control($wp_customize, 'smoothrobotics-banner-callout-single-control', array(
@@ -232,6 +254,27 @@ function smoothrobotics_custom_callout($wp_customize) {
         'flex_width' => true,
         'flex_height' => true,
     )));
+    // Vi skal også kunne ændre lidt i cases siden
+    $wp_customize->add_setting('smoothrobotics-cases-callout-headline', array(
+        'default' => 'Our Cases',
+        'transport' => 'refresh',
+        ));
+    $wp_customize->add_control('smoothrobotics-cases-callout-headline-control', array(
+        'label' => 'Headline til Cases',
+        'section' => 'smoothrobotics-callout-section',
+        'settings' => 'smoothrobotics-cases-callout-headline',
+        'type' => 'text',
+    ));
+    $wp_customize->add_setting('smoothrobotics-cases-callout-paragraph', array(
+        'default' => 'Look at our latest cases, where we help good companies, to become even better.',
+        'transport' => 'refresh',
+        ));
+    $wp_customize->add_control('smoothrobotics-cases-callout-paragraph-control', array(
+        'label' => 'SubHeadline til Cases',
+        'section' => 'smoothrobotics-callout-section',
+        'settings' => 'smoothrobotics-cases-callout-paragraph',
+        'type' => 'textarea',
+    ));
 };
 add_action('customize_register', 'smoothrobotics_custom_callout');
 

@@ -144,21 +144,22 @@
 </section>
 <section class="section-numbers">
 <article class="numbers-article-item">
-    <h1>#1</h1>
-    <p>Welding software in the world</p>
+<?php echo get_post_meta($post->ID, 'section_numbers_first_number', true);?>
 </article>
 <article class="numbers-article-item">
-    <h1>#1</h1>
-    <p>Welding software in the world</p></article>
+<?php echo get_post_meta($post->ID, 'section_numbers_second_number', true);?>
+</article>
 <article class="numbers-article-item">
-    <h1>#1</h1>
-    <p>Welding software in the world</p></article>
+<?php echo get_post_meta($post->ID, 'section_numbers_third_number', true);?>
+</article>
 </section>
 <section class="section-breaker second">
     <article class="thebreaker"></article>
 </section>
 <section class="section-partners-wrapper">
-<h2>Our Partners</h2>
+<h2>
+    <?php echo get_post_meta($post->ID, 'partner_headline', true);?>
+</h2>
 <article class="partners-wrapper">
     <img src="<?php echo the_field("partners_partner_image1") ?>" alt="">
     <img src="<?php echo the_field("partners_partner_image2") ?>" alt="">

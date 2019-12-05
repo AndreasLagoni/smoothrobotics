@@ -6,9 +6,14 @@ style="background-image: url(
 )">
 <article class="banneroverlay"></article>
 <article class="banner-innerwrapper">
-<h1 class="newsbanner-h1 std-anim-flyup anim-dur05">Company News.</h1>
-<p class="newsbanner-p std-anim-flyup anim-dur05">Find out about our latest developments, collaborations and 
-events in the international robot industry.</p>
+<h1 class="newsbanner-h1 std-anim-flyup anim-dur05">
+    <?php echo get_theme_mod('smoothrobotics-news-callout-headline', 'Company News.');?>
+</h1>
+<p class="newsbanner-p std-anim-flyup anim-dur05">
+<?php echo get_theme_mod('smoothrobotics-news-callout-paragraph', 
+'Find out about our latest developments, collaborations and 
+events in the international robot industry.');?>
+</p>
 </article>
 </section>
 <section class="archive-itemwrapper archive-news">
