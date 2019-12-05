@@ -47,6 +47,7 @@
   right: 30px;
   cursor: pointer;
 }
+
 // More frontpage
 .frontbanner-wrapper {
   height: 100vh;
@@ -98,6 +99,9 @@
   text-align: center;
   color: white;
 }
+.playanim {
+  animation: playanim 3s infinite;
+}
 .startiframe i {
   font-size: 120px;
   color: white;
@@ -108,8 +112,8 @@
   font-size: 20px;
 }
 .startiframe:hover > i {
-  transform: scale(1.2);
-  transition: 0.3s all;
+  color: #1b2347;
+  transition: 0.5s all;
 }
 .innerbanner-header {
   position: relative;

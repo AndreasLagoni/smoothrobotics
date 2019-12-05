@@ -23,6 +23,7 @@ jQuery(document).ready(function($) {
   const firstSection = document.querySelector(".item-header");
   const secondSection = document.querySelector(".maincontent-banner-header");
   const thirdSection = document.querySelector(".info-aboutus-row1");
+  const sectionNumbers = document.querySelector(".section-numbers");
   const fourthSection = document.querySelector(".section-partners-wrapper");
   window.addEventListener("scroll", function() {
     if (isInViewport(firstSection)) {
@@ -35,6 +36,10 @@ jQuery(document).ready(function($) {
     if (isInViewport(thirdSection)) {
       // third section
       $(thirdSection).addClass("std-animafter");
+    }
+    if (isInViewport(sectionNumbers)) {
+      // fourth section
+      $(sectionNumbers).addClass("std-anim-flyup anim-dur1");
     }
     if (isInViewport(fourthSection)) {
       // fourth section

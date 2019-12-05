@@ -9,6 +9,7 @@
         ?>
     </div>
 </section>
+
 <section class="frontbanner-wrapper">  
 
 <div class="videowrapper filterblue">
@@ -29,12 +30,12 @@
     <a href="<?php echo site_url().'/contact-us';?>" class="std-button">Get in Contact</a>
     </div>
     <div class="startiframe">
-        <i class="fas fa-play-circle"></i>
+        <i class="fas fa-play-circle playanim"></i>
         <p>Company Presentation</p>
     </div>
 </div>
 </section>
-<section class="frontpage-underheader-wrapper">
+<section class="frontpage-underheader-wrapper" id="news">
     <article class="frontpage-underheader-item">
     <div class="underheader-item-banner" 
         style="background-image: url('<?php echo the_field("underheader_item_1_banner_image"); ?>')">
@@ -143,7 +144,7 @@
 </article>
 </section>
 <section class="section-numbers">
-<article class="numbers-article-item">
+<article class="numbers-article-item " >
 <?php echo get_post_meta($post->ID, 'section_numbers_first_number', true);?>
 </article>
 <article class="numbers-article-item">

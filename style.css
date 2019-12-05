@@ -320,6 +320,36 @@ h2.contactinfo {
   }
 }
 
+@-webkit-keyframes playanim {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes playanim {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
 .wrapper {
   padding-top: 110px;
 }
@@ -440,6 +470,11 @@ h2.contactinfo {
   color: white;
 }
 
+.playanim {
+  -webkit-animation: playanim 3s infinite;
+          animation: playanim 3s infinite;
+}
+
 .startiframe i {
   font-size: 120px;
   color: white;
@@ -453,10 +488,9 @@ h2.contactinfo {
 }
 
 .startiframe:hover > i {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  -webkit-transition: 0.3s all;
-  transition: 0.3s all;
+  color: #1b2347;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
 }
 
 .innerbanner-header {
