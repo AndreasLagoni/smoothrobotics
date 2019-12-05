@@ -21,6 +21,8 @@
 }
 .intro-content::after {
   content: "";
+
+  opacity: 0;
   position: absolute;
   top: 0;
   left: 0;
@@ -41,7 +43,19 @@
 .intro-content p {
   font-size: 20px;
 }
+.intro-image-wrapper {
+  min-height: 500px;
+  padding-top: 70px;
+  padding-right: 70px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .intro-image {
+  width: 100%;
+  height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -55,6 +69,8 @@
 }
 .quote::after {
   content: "";
+
+  opacity: 0;
   position: absolute;
   top: 0;
   left: 0;
@@ -72,6 +88,13 @@
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
+}
+.secondsection-image {
+  padding-top: 70px;
+  padding-right: 70px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 // our story
 .ourstorywrapper {
@@ -115,6 +138,8 @@
 }
 .ourstory-maininfo h2::after {
   content: "";
+
+  opacity: 0;
   position: absolute;
   top: 0;
   left: 0;
@@ -175,6 +200,7 @@
 }
 .teammembers-header h2::after {
   content: "";
+  opacity: 0;
   position: absolute;
   top: 0;
   left: 0;
@@ -183,7 +209,6 @@
   background-color: #d97e3f;
 }
 .archiveteammembers-wrapper {
-  padding-top: 100px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 2fr));
   grid-auto-rows: minmax(320px, auto);

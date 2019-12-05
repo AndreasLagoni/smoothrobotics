@@ -6,9 +6,9 @@
 <main class="main-wrapper">
 <section class="banner-bannerwrapper about-banner"  style="background-image: url('<?php the_field('header_image');  ?>')">
 <article class="banneroverlay"></article>
-<article class="banner-innerwrapper">
-<h2 class="aboutus-h2">THE SMOOTHTOOL</h2>
-<h1 class="aboutus-h1"><?php echo get_post_meta($post->ID, 'header_title', true);?></h1>
+<article class="banner-innerwrapper ">
+<h2 class="aboutus-h2 std-anim-flyup anim-dur05">THE SMOOTHTOOL</h2>
+<h1 class="aboutus-h1 std-anim-flyup anim-dur1"><?php echo get_post_meta($post->ID, 'header_title', true);?></h1>
 </article>
 </section>
 <main class="aboutuswrapper">
@@ -17,9 +17,12 @@
             <h2><?php echo get_post_meta($post->ID, 'first_section_headline', true);?></h2>
 <p><?php echo get_post_meta($post->ID, 'first_section_content', true);?></p>
         </article>
-        <article class="intro-image" style="background-image: url(<?php 
-            the_field('first_section_image');
+        <article class="intro-image-wrapper" style="background-image: url(<?php 
+            the_field('first_section_dot_image');
             ?>)">
+            <div class="intro-image" style="background-image: url(<?php 
+            the_field('first_section_image');
+            ?>)"></div>
         </article>
     </section>
     <section class="quoteimagewrapper">
@@ -28,14 +31,19 @@
             All need a solution.”</h2>
         </article>
         <article class="quoteimage">
-<img src="<?php 
+            <div class="secondsection-image" style="background-image: url(<?php 
+            the_field('first_section_dot_image');
+            ?>)">
+                <img src="<?php 
             the_field('second_section_image');
             ?>" alt="">
+            </div>
+
         </article>
     </section>
     <section class="ourstorywrapper">
         <article class="ourstory-maininfo">
-        <h2><?php echo get_post_meta($post->ID, 'third_section_headline', true);?></h2>
+        <h2 class="ourstory-h2"><?php echo get_post_meta($post->ID, 'third_section_headline', true);?></h2>
         <p class="ourstory-info-p">
 
         <?php echo get_post_meta($post->ID, 'third_section_text_column1', true);?>
@@ -49,7 +57,7 @@
     </section>
     <section class="teammembers-wrapper">
         <article class="teammembers-header">
-            <h2>
+            <h2 class="teammembers-h2">
                 Team Members
             </h2>
         </article>

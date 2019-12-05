@@ -11,7 +11,10 @@ function load_scripts() {
         {
             case 'home':
                 wp_enqueue_script( 'script', get_template_directory_uri() . '/js/homepage.js', array ( 'jquery' ), 1.2, true);
-                break;
+            break;
+            case 'about-us':
+                wp_enqueue_script( 'script', get_template_directory_uri() . '/js/about.js', array ( 'jquery' ), 1.2, true);
+            break;
         }
     }   
 }

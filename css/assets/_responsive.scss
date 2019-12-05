@@ -124,7 +124,7 @@
   .intro-content::after {
     width: 15%;
   }
-  .intro-image {
+  .intro-image-wrapper {
     display: none;
   }
   .ourstorywrapper {
@@ -168,6 +168,10 @@
   }
   .cases-content {
     width: 100%;
+  }
+  // contact
+  h2.contactinfo {
+    font-size: 50px;
   }
   // Footer
   .footernav {
@@ -397,6 +401,9 @@
   }
   .banner-innercontact div {
     margin: 5px 0;
+  }
+  .intro-content {
+    padding-right: 0;
   }
 }
 // Mobile

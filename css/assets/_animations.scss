@@ -1,6 +1,7 @@
 .std-anim-flyup {
   animation-name: std-flyup;
   animation-fill-mode: forwards;
+  opacity: 1;
 }
 .std-anim-flyup.anim-dur05 {
   animation-duration: 0.5s;
@@ -26,16 +27,15 @@
   animation-name: std-afteranim;
   animation-duration: 1.5s;
   animation-fill-mode: forwards;
+  opacity: 1;
 }
 @keyframes std-afteranim {
   0% {
     opacity: 0;
     width: 0;
   }
-  20% {
-    opacity: 1;
-  }
   100% {
+    opacity: 1;
     width: 150px;
   }
 }
