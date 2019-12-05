@@ -13,11 +13,13 @@
 <div class="banner-innercontact std-anim-flyup anim-dur1">
     <div class="banner-innercontactsocialitem">
         <i class="fas fa-mobile-alt"></i>
-        <p>+ 45 27837462</p>
+        <p><?php echo get_post_meta($post->ID, 'phone_numbers', true);?></p>
     </div>
     <div class="banner-innercontactsocialitem">
     <i class="fas fa-envelope"></i>
-        <p>Info@smooth-robotics.com</p>
+        <p>
+        <?php echo get_post_meta($post->ID, 'email', true);?>
+        </p>
     </div>
 </div>
 </article>
