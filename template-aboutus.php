@@ -7,7 +7,7 @@
 <section class="banner-bannerwrapper about-banner"  style="background-image: url('<?php the_field('header_image');  ?>')">
 <article class="banneroverlay"></article>
 <article class="banner-innerwrapper ">
-<h2 class="aboutus-h2 std-anim-flyup anim-dur05">THE SMOOTHTOOL</h2>
+<h2 class="aboutus-h2 std-anim-flyup anim-dur05"><?php echo get_post_meta($post->ID, 'text_above_header', true);?></h2>
 <h1 class="aboutus-h1 std-anim-flyup anim-dur1"><?php echo get_post_meta($post->ID, 'header_title', true);?></h1>
 </article>
 </section>
@@ -27,8 +27,9 @@
     </section>
     <section class="quoteimagewrapper">
         <article class="quote">
-            <h2>“Nobody needs a robot,
-            All need a solution.”</h2>
+            <h2>
+            <?php echo get_post_meta($post->ID, 'quote_headline', true);?>
+        </h2>
         </article>
         <article class="quoteimage">
             <div class="secondsection-image" style="background-image: url(<?php 
@@ -58,7 +59,8 @@
     <section class="teammembers-wrapper">
         <article class="teammembers-header">
             <h2 class="teammembers-h2">
-                Team Members
+                
+                <?php echo get_post_meta($post->ID, 'teammembers_headline', true);?>
             </h2>
         </article>
         <article class="archiveteammembers-wrapper">
@@ -103,14 +105,21 @@ style="background-image: url(<?php echo $thumb_url;?>)">
 ?>
 <?php else: 
     echo "No Members found";
-endif; ?>
+endif; 
+wp_reset_query();
+?>
         </article>
         </section>
         <section class="sendtocontact">
-        <h2>We would love to hear from you</h2>
-        <p>Let us answer your questions. We are here to take 
-the journey with you</p>
-<a href="./contact-us" class="std-button">Contact Smooth Robotics</a>
+        <h2>
+            <?php echo get_post_meta($post->ID, 'last_section_headline', true);?>
+        </h2>
+        <p>
+        <?php echo get_post_meta($post->ID, 'last_section_paragraph', true);?>
+        </p>
+<a href="./contact-us" class="std-button">
+<?php echo get_post_meta($post->ID, 'last_section_button_text', true);?>
+</a>
     </section>
 </main>
 </main>
