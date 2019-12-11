@@ -2002,6 +2002,9 @@ input[type="checkbox"] {
   .startiframe i {
     font-size: 60px;
   }
+  .frontpage-underheader-wrapper {
+    top: 0;
+  }
   .frontpage-underheader-item {
     width: 31%;
   }
