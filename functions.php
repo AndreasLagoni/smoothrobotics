@@ -137,7 +137,7 @@ add_action('init','custom_post_type_teammembers');
 // Laver custom post type for cases
 function custom_post_type_cases() {
     $labels = array(
-        'name' => 'Cases',
+        'name' => 'cases',
         'singular_name' => 'Case',
         'add_new' => 'Add Case',
         'all_items' => 'All Cases',
@@ -173,7 +173,7 @@ function custom_post_type_cases() {
         'menu_position' => 5,
         'exclude_from_search' => false
     );
-    register_post_type('Cases',$args);
+    register_post_type('cases',$args);
 }
 add_action('init','custom_post_type_cases');
 // Her tilføjer vi mulighed for admins at lave om på contact page. 
