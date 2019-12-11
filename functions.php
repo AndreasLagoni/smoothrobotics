@@ -137,7 +137,7 @@ add_action('init','custom_post_type_teammembers');
 // Laver custom post type for cases
 function custom_post_type_cases() {
     $labels = array(
-        'name' => 'cases',
+        'name' => 'Cases',
         'singular_name' => 'Case',
         'add_new' => 'Add Case',
         'all_items' => 'All Cases',
