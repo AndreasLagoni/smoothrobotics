@@ -69,19 +69,13 @@
   color: #1b2347;
   margin-bottom: 20px;
 }
-.aside-subscribenews label,
-.aside-subscribenews input::placeholder,
-.aside-subscribenews input {
-  font-size: 25px;
-  color: #1b2347;
+.tnp-subscription label,
+.tnp-subscription input::placeholder,
+.tnp-subscription input {
+  font-size: 25px !important;
+  color: #1b2347 !important;
 }
-.aside-subscribenews input {
-  padding: 5px 5px;
-  border-radius: 9px;
-  background: transparent;
-  border: 1px solid #1b2347;
-  margin: 10px 0;
-}
-.aside-subscribenews input.checkboxaccept {
-  margin-right: 10px;
+.aside-subscribenews .tnp.tnp-subscription {
+  margin: 15px 0;
+  max-width: 100%;
 }

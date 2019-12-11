@@ -275,6 +275,26 @@ function smoothrobotics_custom_callout($wp_customize) {
         'settings' => 'smoothrobotics-cases-callout-paragraph',
         'type' => 'textarea',
     ));
+    // Her skal der være mulighed for at ændre formen på newsletter.
+    $wp_customize->add_setting('smoothrobotics-single-callout-newsletter', array(
+        'default' => '<div class="tnp tnp-subscription">
+        <form method="post" action="http://localhost/wordpress/?na=s" onsubmit="return newsletter_check(this)">
+        
+        <input type="hidden" name="nlang" value="">
+        <div class="tnp-field tnp-field-email"><label>Email</label><input class="tnp-email" type="email" name="ne" required></div>
+        <div class="tnp-field tnp-field-privacy"><label><input type="checkbox" name="ny" required class="tnp-privacy"> By continuing, you accept the privacy policy</label></div>
+        <div class="tnp-field tnp-field-button"><input class="tnp-submit" type="submit" value="Subscribe" >
+        </div>
+        </form>
+        </div>',
+        'transport' => 'refresh',
+        ));
+    $wp_customize->add_control('smoothrobotics-single-callout-newsletter-control', array(
+        'label' => 'Her skal formen være for Newsletter plugin. Kig jeres SmoothGuide hvis i er i tvivl om hvad der skal stå her. ',
+        'section' => 'smoothrobotics-callout-section',
+        'settings' => 'smoothrobotics-single-callout-newsletter',
+        'type' => 'textarea',
+    ));
 };
 add_action('customize_register', 'smoothrobotics_custom_callout');
 

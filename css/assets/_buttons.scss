@@ -9,6 +9,27 @@
   transition: 0.3s all;
   text-decoration: none;
 }
+// For at override newsletter plugin style
+.tnp-subscription input.tnp-submit {
+  margin-top: 50px !important;
+  color: white !important;
+  max-width: 350px !important;
+  padding: 20px 60px !important;
+  font-size: 20px !important;
+  background-color: #d97e3f !important;
+  cursor: pointer !important;
+  transition: 0.3s all !important;
+  text-decoration: none !important;
+}
+.tnp-subscription input.tnp-submit:hover {
+  background-color: #1b2347 !important;
+  color: white !important;
+  transition: 0.3s all !important;
+}
+.tnp-subscription input.tnp-submit:active,
+.tnp-subscription input.tnp-submit:focus {
+  outline: none !important;
+}
 .std-button:active,
 .std-button:focus {
   outline: none;

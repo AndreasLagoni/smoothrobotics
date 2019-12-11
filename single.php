@@ -36,16 +36,16 @@ background-image: url(<?php echo wp_get_attachment_url(get_theme_mod('smoothrobo
 </div>
 <div class="aside-subscribenews">
     <h2>Get Our News Updates</h2>
-    <label for="email">Email:</label>
-    <input type="text">
-    <label>
-    <input class="checkboxaccept"type="checkbox" name="checkboxaccept" value="value">I would like to receive 
-communication and relative 
-news about SmoothTool 
-including updates, services and 
-products.
-    </label>
-    <button class="std-button subscribe">Subscribe</button>
+<div class="tnp tnp-subscription">
+<form method="post" action="http://localhost/wordpress/?na=s" onsubmit="return newsletter_check(this)">
+
+<input type="hidden" name="nlang" value="">
+<div class="tnp-field tnp-field-email"><label>Email</label><input class="tnp-email" type="email" name="ne" required></div>
+<div class="tnp-field tnp-field-privacy"><label><input type="checkbox" name="ny" required class="tnp-privacy"> By continuing, you accept the privacy policy</label></div>
+<div class="tnp-field tnp-field-button"><input class="tnp-submit" type="submit" value="Subscribe" >
+</div>
+</form>
+</div>
 
 
 </div>

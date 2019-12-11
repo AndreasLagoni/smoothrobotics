@@ -28,6 +28,31 @@ body {
   text-decoration: none;
 }
 
+.tnp-subscription input.tnp-submit {
+  margin-top: 50px !important;
+  color: white !important;
+  max-width: 350px !important;
+  padding: 20px 60px !important;
+  font-size: 20px !important;
+  background-color: #d97e3f !important;
+  cursor: pointer !important;
+  -webkit-transition: 0.3s all !important;
+  transition: 0.3s all !important;
+  text-decoration: none !important;
+}
+
+.tnp-subscription input.tnp-submit:hover {
+  background-color: #1b2347 !important;
+  color: white !important;
+  -webkit-transition: 0.3s all !important;
+  transition: 0.3s all !important;
+}
+
+.tnp-subscription input.tnp-submit:active,
+.tnp-subscription input.tnp-submit:focus {
+  outline: none !important;
+}
+
 .std-button:active,
 .std-button:focus {
   outline: none;
@@ -1118,44 +1143,37 @@ h2.contactinfo {
   margin-bottom: 20px;
 }
 
-.aside-subscribenews label,
-.aside-subscribenews input::-webkit-input-placeholder,
-.aside-subscribenews input {
-  font-size: 25px;
-  color: #1b2347;
+.tnp-subscription label,
+.tnp-subscription input::-webkit-input-placeholder,
+.tnp-subscription input {
+  font-size: 25px !important;
+  color: #1b2347 !important;
 }
 
-.aside-subscribenews label,
-.aside-subscribenews input:-ms-input-placeholder,
-.aside-subscribenews input {
-  font-size: 25px;
-  color: #1b2347;
+.tnp-subscription label,
+.tnp-subscription input:-ms-input-placeholder,
+.tnp-subscription input {
+  font-size: 25px !important;
+  color: #1b2347 !important;
 }
 
-.aside-subscribenews label,
-.aside-subscribenews input::-ms-input-placeholder,
-.aside-subscribenews input {
-  font-size: 25px;
-  color: #1b2347;
+.tnp-subscription label,
+.tnp-subscription input::-ms-input-placeholder,
+.tnp-subscription input {
+  font-size: 25px !important;
+  color: #1b2347 !important;
 }
 
-.aside-subscribenews label,
-.aside-subscribenews input::placeholder,
-.aside-subscribenews input {
-  font-size: 25px;
-  color: #1b2347;
+.tnp-subscription label,
+.tnp-subscription input::placeholder,
+.tnp-subscription input {
+  font-size: 25px !important;
+  color: #1b2347 !important;
 }
 
-.aside-subscribenews input {
-  padding: 5px 5px;
-  border-radius: 9px;
-  background: transparent;
-  border: 1px solid #1b2347;
-  margin: 10px 0;
-}
-
-.aside-subscribenews input.checkboxaccept {
-  margin-right: 10px;
+.aside-subscribenews .tnp.tnp-subscription {
+  margin: 15px 0;
+  max-width: 100%;
 }
 
 .distributors-wrapper {
@@ -2292,6 +2310,9 @@ input[type="checkbox"] {
   .aside-subscribenews {
     width: 90%;
     margin-top: 50px;
+  }
+  .aside-socials {
+    width: 90%;
   }
 }
 
