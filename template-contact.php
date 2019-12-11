@@ -8,8 +8,8 @@
 <article class="banneroverlay">
 </article>
 <article class="banner-innerwrapper std-anim-flyup anim-dur05">
-<h1 class="newsbanner-h1 "><?php echo get_post_meta($post->ID, 'header_headline', true);?></h1>
-<p class="newsbanner-p "><?php echo get_post_meta($post->ID, 'header_subheadline', true);?></p>
+<h1 class="contactbanner-h1 "><?php echo get_post_meta($post->ID, 'header_headline', true);?></h1>
+<p class="contactbanner-p "><?php echo get_post_meta($post->ID, 'header_subheadline', true);?></p>
 <div class="banner-innercontact std-anim-flyup anim-dur1">
     <div class="banner-innercontactsocialitem">
         <i class="fas fa-mobile-alt"></i>
