@@ -1,9 +1,10 @@
 @import "buttons";
 $font-family: Arial;
 $h1-size: 70px;
-$h2-large: 60px;
+$h2-large: 50px;
 $h2-size: 40px;
 $h3-size: 30px;
+$p-large: 25px;
 $p-size: 20px;
 $nav-size: 25px;
 $primary-color: #1b2347;
@@ -40,5 +41,12 @@ li a {
 }
 h2.contactinfo {
   color: $primary-color;
+  font-size: $h2-large;
+}
+.intro-content h2,
+.sendtocontact h2,
+.quote h2,
+.ourstory-maininfo h2,
+.teammembers-header h2 {
   font-size: $h2-large;
 }
