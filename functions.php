@@ -70,7 +70,7 @@ function custom_post_type_news() {
     $args = array(
         'labels' => $labels,
         'public' => true,
-        'has_archive' => true,
+        'has_archive' => 'news',
         'publicly_queryable' => true,
         'query_var' => true,
         'rewrite' => true,
