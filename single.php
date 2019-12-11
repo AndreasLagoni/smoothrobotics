@@ -24,19 +24,19 @@ background-image: url(<?php echo wp_get_attachment_url(get_theme_mod('smoothrobo
 </div>
 <div class="singlepage-aside">
 <div class="aside-socials">
-<a href="">
+<a href="https://www.youtube.com/channel/UCvPe3sHxRandq9fBaneSJbw/featured">
 <i class="fab fa-youtube-square"></i>
 </a>
-<a href="">
+<a href="https://www.facebook.com/Robotvirksomhed/">
 <i class="fab fa-facebook-square"></i>
 </a>
-<a href="">
+<a href="https://dk.linkedin.com/company/smooth-robotics-aps">
     <i class="fab fa-linkedin"></i> 
 </a>
 </div>
 <div class="aside-subscribenews">
     <h2>Get Our News Updates</h2>
-<div class="tnp tnp-subscription">
+    <?php echo get_theme_mod('smoothrobotics-single-callout-newsletter', '<div class="tnp tnp-subscription">
 <form method="post" action="http://localhost/wordpress/?na=s" onsubmit="return newsletter_check(this)">
 
 <input type="hidden" name="nlang" value="">
@@ -45,7 +45,7 @@ background-image: url(<?php echo wp_get_attachment_url(get_theme_mod('smoothrobo
 <div class="tnp-field tnp-field-button"><input class="tnp-submit" type="submit" value="Subscribe" >
 </div>
 </form>
-</div>
+</div>');?>
 
 
 </div>
