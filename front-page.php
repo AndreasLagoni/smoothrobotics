@@ -14,7 +14,7 @@
 
 <div class="videowrapper filterblue">
 <video autoplay loop muted >
-<source src="/wordpress/wp-content/themes/smoothrobotics/assets/intro.mp4" type="video/mp4">
+<source src="/smooth/wp-content/themes/smoothrobotics/assets/intro.mp4" type="video/mp4">
 </video>
 </div>
 <div class="innerfrontbanner-wrapper">
