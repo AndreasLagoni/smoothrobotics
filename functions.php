@@ -73,7 +73,7 @@ function custom_post_type_news() {
         'has_archive' => true,
         'publicly_queryable' => true,
         'query_var' => true,
-        'rewrite' => array('slug' => 'news', 'with_front' => true),
+        'rewrite' => true,
         'capability_type' => 'post',
         'hierachical' => false,
         'supports' => array(
