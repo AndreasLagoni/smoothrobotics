@@ -73,7 +73,7 @@ function custom_post_type_news() {
         'has_archive' => 'news',
         'publicly_queryable' => true,
         'query_var' => true,
-        'rewrite' => array('slug' => 'news'),
+        'rewrite' => true,
         'capability_type' => 'post',
         'hierachical' => false,
         'supports' => array(
@@ -156,7 +156,7 @@ function custom_post_type_cases() {
         'has_archive' => true,
         'publicly_queryable' => true,
         'query_var' => true,
-        'rewrite' => array('slug' => 'cases'),
+        'rewrite' => true,
         'capability_type' => 'post',
         'hierachical' => false,
         'supports' => array(
