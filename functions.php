@@ -24,12 +24,12 @@ add_action('wp_enqueue_scripts', 'load_scripts');
 function add_custom_pt( $query ) {
     
     if ( !is_admin() && $query->is_main_query() && $query->is_post_type_archive('news')) {
-      $query->set( 'post_type', array( 'News' ) );
+      $query->set( 'post_type', array( 'news' ) );
       $query->set( 'order', 'DESC' );
       $query->set( 'posts_per_page', 6 );
     }
     else if ( !is_admin() && $query->is_main_query() && $query->is_post_type_archive('cases')) {
-        $query->set( 'post_type', array( 'Cases' ) );
+        $query->set( 'post_type', array( 'cases' ) );
         $query->set( 'order', 'DESC' );
         $query->set( 'posts_per_page', 3 );
       }

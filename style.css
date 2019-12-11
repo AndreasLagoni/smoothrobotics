@@ -2416,7 +2416,7 @@ input[type="checkbox"] {
   .archive-item-link {
     font-size: 16px;
   }
-  .archive-itembanner {
+  .archive-news .archive-itembanner {
     height: 150px;
   }
   .custombg {
