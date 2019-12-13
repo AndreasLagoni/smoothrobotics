@@ -211,6 +211,8 @@ function smoothrobotics_custom_callout($wp_customize) {
         'label' => 'Banner på siden news',
         'section' => 'smoothrobotics-callout-section',
         'settings' => 'smoothrobotics-banner-callout-news',
+        'height' => 500,
+        'width' => 1000,
         'flex_width' => true,
         'flex_height' => true,
     )));
@@ -244,6 +246,8 @@ function smoothrobotics_custom_callout($wp_customize) {
         'settings' => 'smoothrobotics-banner-callout-single',
         'flex_width' => true,
         'flex_height' => true,
+        'height' => 500,
+        'width' => 1000,
     )));
     // Vi tilføjer også en til cases
     $wp_customize->add_setting('smoothrobotics-banner-callout-cases');
@@ -253,6 +257,8 @@ function smoothrobotics_custom_callout($wp_customize) {
         'settings' => 'smoothrobotics-banner-callout-cases',
         'flex_width' => true,
         'flex_height' => true,
+        'height' => 500,
+        'width' => 1000,
     )));
     // Vi skal også kunne ændre lidt i cases siden
     $wp_customize->add_setting('smoothrobotics-cases-callout-headline', array(
