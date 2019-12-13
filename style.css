@@ -1929,6 +1929,11 @@ input[type="checkbox"] {
   font-weight: bold;
 }
 
+.footer-p a {
+  text-decoration: underline;
+  color: white;
+}
+
 @media screen and (max-width: 1500px) {
   .halfdiv {
     width: 70%;

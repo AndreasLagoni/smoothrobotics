@@ -24,6 +24,9 @@ array(
 <p class="footer-p">Smooth Robotics </p>
 <p class="footer-p">2019</p>
 <p class="footer-p">CVR: 39281727</p>
+<p class="footer-p">
+<a href="<?php  echo get_site_url().'/privacy-policy';  ?>">Privacy Policy</a>    
+</p>
 </article>
 </section>
 
