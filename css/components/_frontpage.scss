@@ -178,7 +178,7 @@
 }
 .underheader-item-content a {
   color: #d97e3f;
-  text-decoration: none;
+  text-decoration: underline;
 }
 // Breaker section
 .section-breaker {
@@ -313,7 +313,7 @@
 }
 .info-aboutus-circle {
   position: absolute;
-  top: 4px;
+  top: 0px;
   left: 0;
   width: 30px;
   height: 30px;
