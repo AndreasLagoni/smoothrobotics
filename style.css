@@ -1085,6 +1085,10 @@ h2.contactinfo {
   padding-top: 70px;
 }
 
+.singlepage-maincontent img {
+  max-width: 100%;
+}
+
 .singlepage-maincontent p {
   color: #1b2347;
   font-size: 20px;
