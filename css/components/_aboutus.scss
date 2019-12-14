@@ -83,13 +83,23 @@
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
+  max-width: 100%;
 }
+
 .secondsection-image {
+  max-width: 100%;
+  width: 600px;
   padding-top: 70px;
   padding-right: 70px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.secondsection-image img {
+  max-width: 100%;
 }
 // our story
 .ourstorywrapper {
@@ -201,7 +211,7 @@
 }
 .archiveteammembers-wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 400px));
+  grid-template-columns: repeat(auto-fill, minmax(320px, 350px));
   grid-auto-rows: minmax(320px, auto);
   grid-gap: 35px;
 }

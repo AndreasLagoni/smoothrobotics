@@ -1603,14 +1603,30 @@ input[type="checkbox"] {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  max-width: 100%;
 }
 
 .secondsection-image {
+  max-width: 100%;
+  width: 600px;
   padding-top: 70px;
   padding-right: 70px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.secondsection-image img {
+  max-width: 100%;
 }
 
 .ourstorywrapper {
@@ -1744,8 +1760,8 @@ input[type="checkbox"] {
 .archiveteammembers-wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(320px, 400px))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(320px, 400px));
+  -ms-grid-columns: (minmax(320px, 350px))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(320px, 350px));
   grid-auto-rows: minmax(320px, auto);
   grid-gap: 35px;
 }
