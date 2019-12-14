@@ -1927,12 +1927,17 @@ input[type="checkbox"] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .footer-p {
   opacity: 0.5;
   color: white;
-  margin: 0 20px;
+  margin: 10px 20px;
   font-size: 15px;
   font-weight: bold;
 }
@@ -1940,6 +1945,7 @@ input[type="checkbox"] {
 .footer-p a {
   text-decoration: underline;
   color: white;
+  font-size: 15px;
 }
 
 @media screen and (max-width: 1500px) {
@@ -2157,7 +2163,7 @@ input[type="checkbox"] {
     width: 90%;
   }
   .frontbanner-wrapper {
-    height: 40vh;
+    height: 400px;
   }
   .innerbanner-text {
     display: none;
