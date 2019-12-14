@@ -23,8 +23,7 @@
     <h2><?php echo get_post_meta($post->ID, 'header_subtitle', true);?></h2>
     </div>
     <div class="innerbanner-text halfdiv std-anim-flyup anim-dur05 anim-delay03">
-    <p><?php echo get_post_meta($post->ID, 'header_column_1', true);?></p>
-<p><?php echo get_post_meta($post->ID, 'header_column_2', true);?></p>
+    <p><?php echo get_post_meta($post->ID, 'header_column', true);?></p>
     </div>
     <div class="cta-inner std-anim-flyup anim-dur05 anim-delay03">
     <a href="<?php echo site_url().'/contact-us';?>" class="std-button">Get in Contact</a>
