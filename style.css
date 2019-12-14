@@ -1042,13 +1042,13 @@ h2.contactinfo {
   background: none;
   word-break: normal;
   overflow: visible;
-  height: 100%;
-  max-height: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
 }
 
 .cases-content h3.archive-item-header {
   color: #1b2347;
-  font-size: 50px;
   margin: 0;
   margin-bottom: 10px;
 }
@@ -2508,7 +2508,7 @@ input[type="checkbox"] {
     font-size: 16px;
   }
   .aboutuswrapper h2 {
-    font-size: 50px;
+    font-size: 40px;
   }
   .banner-innerwrapper .aboutus-h1 {
     font-size: 30px;

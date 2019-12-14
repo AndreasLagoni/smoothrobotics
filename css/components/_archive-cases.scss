@@ -27,12 +27,10 @@
   background: none;
   word-break: normal;
   overflow: visible;
-  height: 100%;
-  max-height: 100%;
+  height: max-content;
 }
 .cases-content h3.archive-item-header {
   color: #1b2347;
-  font-size: 50px;
   margin: 0;
   margin-bottom: 10px;
 }
