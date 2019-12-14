@@ -1756,9 +1756,10 @@ input[type="checkbox"] {
 
 .teammembers-itembanner {
   height: 300px;
+  max-width: 100%;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   border-radius: 5px 5px 0 0;
 }
 
@@ -1958,9 +1959,6 @@ input[type="checkbox"] {
   }
   .topNav-links ul li {
     margin-left: 40px;
-  }
-  .topNav-links ul li a {
-    font-size: 22px;
   }
   .intro-image {
     height: 500px;
@@ -2186,7 +2184,7 @@ input[type="checkbox"] {
     padding: 15px 50px;
   }
   .startiframe {
-    top: 30%;
+    top: 35%;
   }
   .frontpage-underheader-wrapper {
     top: 20px;
@@ -2393,6 +2391,10 @@ input[type="checkbox"] {
   .intro-content {
     padding-right: 0;
   }
+  .archiveteammembers-wrapper {
+    -ms-grid-columns: (minmax(250px, 2fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(250px, 2fr));
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -2525,6 +2527,13 @@ input[type="checkbox"] {
   }
   .sendtocontact .std-button {
     margin-top: 0;
+  }
+  .archiveteammembers-wrapper {
+    -ms-grid-columns: (minmax(200px, 2fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(200px, 2fr));
+  }
+  .teammembers-itembanner {
+    height: 200px;
   }
   .singlepage-maincontent h1 {
     font-size: 30px;

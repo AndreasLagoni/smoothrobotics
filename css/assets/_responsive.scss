@@ -9,9 +9,6 @@
   .topNav-links ul li {
     margin-left: 40px;
   }
-  .topNav-links ul li a {
-    font-size: 22px;
-  }
   .intro-image {
     height: 500px;
   }
@@ -232,7 +229,7 @@
     padding: 15px 50px;
   }
   .startiframe {
-    top: 30%;
+    top: 35%;
   }
   // Underheader
   .frontpage-underheader-wrapper {
@@ -424,6 +421,11 @@
   .intro-content {
     padding-right: 0;
   }
+  // About us
+
+  .archiveteammembers-wrapper {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 2fr));
+  }
 }
 // Mobile
 @media only screen and (max-width: 600px) {
@@ -549,6 +551,12 @@
   }
   .sendtocontact .std-button {
     margin-top: 0;
+  }
+  .archiveteammembers-wrapper {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 2fr));
+  }
+  .teammembers-itembanner {
+    height: 200px;
   }
   // Single
   .singlepage-maincontent h1 {
