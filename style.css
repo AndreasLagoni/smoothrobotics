@@ -1744,8 +1744,8 @@ input[type="checkbox"] {
 .archiveteammembers-wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(320px, 2fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(320px, 2fr));
+  -ms-grid-columns: (minmax(320px, 400px))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(320px, 400px));
   grid-auto-rows: minmax(320px, auto);
   grid-gap: 35px;
 }
@@ -1755,11 +1755,11 @@ input[type="checkbox"] {
 }
 
 .teammembers-itembanner {
-  height: 300px;
+  height: 350px;
   max-width: 100%;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   border-radius: 5px 5px 0 0;
 }
 
@@ -2115,6 +2115,10 @@ input[type="checkbox"] {
   }
   .teammembers-header {
     top: 20px;
+  }
+  .archiveteammembers-wrapper {
+    -ms-grid-columns: (minmax(320px, 350px))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(320px, 350px));
   }
   .sendtocontact {
     text-align: center;
@@ -2533,7 +2537,7 @@ input[type="checkbox"] {
         grid-template-columns: repeat(auto-fill, minmax(200px, 2fr));
   }
   .teammembers-itembanner {
-    height: 200px;
+    height: 320px;
   }
   .singlepage-maincontent h1 {
     font-size: 30px;

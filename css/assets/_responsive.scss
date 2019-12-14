@@ -155,6 +155,9 @@
   .teammembers-header {
     top: 20px;
   }
+  .archiveteammembers-wrapper {
+    grid-template-columns: repeat(auto-fill, minmax(320px, 350px));
+  }
   .sendtocontact {
     text-align: center;
   }
@@ -556,7 +559,7 @@
     grid-template-columns: repeat(auto-fill, minmax(200px, 2fr));
   }
   .teammembers-itembanner {
-    height: 200px;
+    height: 320px;
   }
   // Single
   .singlepage-maincontent h1 {
