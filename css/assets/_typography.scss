@@ -6,6 +6,7 @@ $h2-size: 40px;
 $h3-size: 25px;
 $p-large: 22px;
 $p-size: 18px;
+$link-size: 18px;
 $nav-size: 20px;
 $primary-color: #1b2347;
 $secondary-color: #d97e3f;
@@ -34,6 +35,9 @@ h3 {
 }
 p {
   font-size: $p-size;
+}
+a {
+  font-size: $link-size;
 }
 li a {
   color: $primary-color;

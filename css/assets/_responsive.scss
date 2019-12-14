@@ -35,13 +35,20 @@
     font-size: 30px;
   }
   .topNav-links {
-    display: none;
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s all;
+    transform: translateY(-50px);
   }
   #toggle {
     display: none;
   }
   #toggle:checked + .topNav-links {
     display: block;
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
   }
   // Styling af selve menuen efter det er mobil
   .topNav-links {

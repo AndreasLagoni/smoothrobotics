@@ -47,7 +47,12 @@ register_nav_menus(
 
     // Ændrer i excerpt filters
 function wpdocs_custom_excerpt_length($length) {
+    if(is_post_type_archive('cases')) {
+        return 75;
+    } else {
+        
     return 25;
+    }
 }
 
 add_filter('excerpt_length', 'wpdocs_custom_excerpt_length',999);

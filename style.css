@@ -96,6 +96,10 @@ p {
   font-size: 18px;
 }
 
+a {
+  font-size: 18px;
+}
+
 li a {
   color: #1b2347;
   font-size: 20px;
@@ -903,7 +907,6 @@ h2.contactinfo {
 
 .archive-item-link {
   color: #d97e3f;
-  font-size: 25px;
   font-weight: bold;
 }
 
@@ -1978,13 +1981,23 @@ input[type="checkbox"] {
     font-size: 30px;
   }
   .topNav-links {
-    display: none;
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: 0.3s all;
+    transition: 0.3s all;
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
   }
   #toggle {
     display: none;
   }
   #toggle:checked + .topNav-links {
     display: block;
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
   }
   .topNav-links {
     position: absolute;
