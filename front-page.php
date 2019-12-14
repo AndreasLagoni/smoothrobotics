@@ -77,13 +77,9 @@
     <h2><?php echo get_post_meta($post->ID, 'second_section_main_title', true);?> </h2>
     <h3><?php echo get_post_meta($post->ID, 'second_section_subtitle', true);?></h3>
     </article>
-    <article class="smoothtool-quickinfo-item">
-    <p><?php echo get_post_meta($post->ID, 'second_section_main_content_column_1', true);?></p></article>
-    <article class="smoothtool-quickinfo-item">
-    <p>
-    <?php echo get_post_meta($post->ID, 'second_section_main_content_column_2', true);?>
-    </p>
-    </article>
+    <article class="smoothtool-quickinfo-item-large">
+    <p><?php echo get_post_meta($post->ID, 'second_section_main_content_column', true);?></p></article>
+    
 </section>
 <section class="smoothtool-maincontent">
     <article class="smoothtool-maincontent-banner" 
